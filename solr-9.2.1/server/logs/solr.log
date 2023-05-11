@@ -1,0 +1,68 @@
+2023-05-10 21:42:45.851 INFO  (main) [] o.e.j.s.Server jetty-10.0.13; built: 2022-12-07T20:13:20.134Z; git: 1c2636ea05c0ca8de1ffd6ca7f3a98ac084c766d; jvm 11.0.18+10-post-Ubuntu-0ubuntu122.04
+2023-05-10 21:43:03.204 WARN  (main) [] o.e.j.u.DeprecationWarning Using @Deprecated Class org.eclipse.jetty.servlet.listener.ELContextCleaner
+2023-05-10 21:43:03.312 INFO  (main) [] o.a.s.s.CoreContainerProvider Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2023-05-10 21:43:03.342 INFO  (main) [] o.a.s.s.CoreContainerProvider  ___      _       Welcome to Apache Solr™ version 9.2.1
+2023-05-10 21:43:03.342 INFO  (main) [] o.a.s.s.CoreContainerProvider / __| ___| |_ _   Starting in standalone mode on port 8983
+2023-05-10 21:43:03.342 INFO  (main) [] o.a.s.s.CoreContainerProvider \__ \/ _ \ | '_|  Install dir: /mnt/g/My Drive/BSc (Hons) CS/CSC5024Z Information Retrieval/ETDsearch/solr-9.2.1
+2023-05-10 21:43:03.342 INFO  (main) [] o.a.s.s.CoreContainerProvider |___/\___/_|_|    Start time: 2023-05-10T21:43:03.342778Z
+2023-05-10 21:43:03.346 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr started with "-XX:+CrashOnOutOfMemoryError" that will crash on any OutOfMemoryError exception. The cause of the OOME will be logged in the crash file at the following path: /mnt/g/My Drive/BSc (Hons) CS/CSC5024Z Information Retrieval/ETDsearch/solr-9.2.1/server/logs/jvm_crash_10135.log
+2023-05-10 21:43:03.363 INFO  (main) [] o.a.s.s.CoreContainerProvider Solr Home: /mnt/g/My Drive/BSc (Hons) CS/CSC5024Z Information Retrieval/ETDsearch/solr-9.2.1/server/solr (source: system property: solr.solr.home)
+2023-05-10 21:43:03.371 INFO  (main) [] o.a.s.c.SolrXmlConfig Loading solr.xml from /mnt/g/My Drive/BSc (Hons) CS/CSC5024Z Information Retrieval/ETDsearch/solr-9.2.1/server/solr/solr.xml
+2023-05-10 21:43:03.762 INFO  (main) [] o.a.s.c.SolrResourceLoader Added 1 libs to classloader, from paths: [/mnt/g/My%20Drive/BSc%20(Hons)%20CS/CSC5024Z%20Information%20Retrieval/ETDsearch/solr-9.2.1/lib]
+2023-05-10 21:43:09.429 WARN  (main) [] o.a.s.u.StartupLoggingUtils Jetty request logging enabled. Will retain logs for last 3 days. See chapter "Configuring Logging" in reference guide for how to configure.
+2023-05-10 21:43:09.437 WARN  (main) [] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2023-05-10 21:43:10.688 INFO  (main) [] o.a.s.c.CorePropertiesLocator Found 0 core definitions underneath /mnt/g/My Drive/BSc (Hons) CS/CSC5024Z Information Retrieval/ETDsearch/solr-9.2.1/server/solr
+2023-05-10 21:43:13.385 INFO  (main) [] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2023-05-10 21:43:13.897 INFO  (main) [] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@6bc28a83{solr-jetty-context.xml,/solr,file:///mnt/g/My%20Drive/BSc%20(Hons)%20CS/CSC5024Z%20Information%20Retrieval/ETDsearch/solr-9.2.1/server/solr-webapp/webapp/,AVAILABLE}{/mnt/g/My Drive/BSc (Hons) CS/CSC5024Z Information Retrieval/ETDsearch/solr-9.2.1/server/solr-webapp/webapp}
+2023-05-10 21:43:13.926 INFO  (main) [] o.e.j.s.RequestLogWriter Opened /mnt/g/My Drive/BSc (Hons) CS/CSC5024Z Information Retrieval/ETDsearch/solr-9.2.1/server/logs/2023_05_10.request.log
+2023-05-10 21:43:13.938 INFO  (main) [] o.e.j.s.AbstractConnector Started ServerConnector@25748410{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2023-05-10 21:43:13.942 INFO  (main) [] o.e.j.s.Server Started Server@24fb6a80{STARTING}[10.0.13,sto=0] @33626ms
+2023-05-10 21:52:48.167 INFO  (qtp192694377-50) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1683755567635} status=0 QTime=304
+2023-05-10 21:52:48.210 INFO  (qtp192694377-28) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1683755567635} status=0 QTime=346
+2023-05-10 21:52:48.363 INFO  (qtp192694377-32) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1683755567635} status=0 QTime=27
+2023-05-10 21:58:20.910 INFO  (qtp192694377-26) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1683755900768} status=0 QTime=0
+2023-05-10 21:58:20.935 INFO  (qtp192694377-29) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1683755900769} status=0 QTime=25
+2023-05-10 21:58:20.960 INFO  (qtp192694377-27) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1683755900769} status=0 QTime=21
+2023-05-10 21:58:29.254 INFO  (qtp192694377-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=14
+2023-05-10 22:38:00.372 INFO  (qtp192694377-47) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1683758280020} status=0 QTime=1
+2023-05-10 22:38:00.426 INFO  (qtp192694377-60) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1683758280020} status=0 QTime=55
+2023-05-10 22:38:00.476 INFO  (qtp192694377-58) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1683758280020} status=0 QTime=43
+2023-05-11 08:13:43.198 INFO  (qtp192694377-65) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1683792822940} status=0 QTime=18
+2023-05-11 08:13:43.299 INFO  (qtp192694377-66) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1683792822941} status=0 QTime=121
+2023-05-11 08:13:43.342 INFO  (qtp192694377-50) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1683792822941} status=0 QTime=34
+2023-05-11 10:23:35.380 INFO  (qtp192694377-70) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1683800615148} status=0 QTime=11
+2023-05-11 10:23:35.449 INFO  (qtp192694377-71) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1683800615148} status=0 QTime=83
+2023-05-11 10:23:35.486 INFO  (qtp192694377-29) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1683800615148} status=0 QTime=27
+2023-05-11 10:28:53.326 INFO  (qtp192694377-53) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=40
+2023-05-11 10:29:23.662 INFO  (qtp192694377-25) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=39
+2023-05-11 10:29:23.827 INFO  (qtp192694377-26) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=45
+2023-05-11 10:29:23.904 INFO  (qtp192694377-58) [ x:indexCore] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=indexCore&action=STATUS&wt=json} status=0 QTime=25
+2023-05-11 10:29:46.952 INFO  (qtp192694377-50) [ x:indexCore] o.a.s.h.a.CoreAdminOperation core create command name=indexCore&action=CREATE&instanceDir=indexCore&wt=json
+2023-05-11 10:29:47.625 INFO  (qtp192694377-50) [ x:indexCore] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.4.0
+2023-05-11 10:29:48.752 INFO  (qtp192694377-50) [ x:indexCore] o.a.s.s.IndexSchema Schema name=default-config
+2023-05-11 10:29:57.477 INFO  (qtp192694377-50) [ x:indexCore] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2023-05-11 10:29:57.477 INFO  (qtp192694377-50) [ x:indexCore] o.a.s.c.CoreContainer Creating SolrCore 'indexCore' using configuration from instancedir /mnt/g/My Drive/BSc (Hons) CS/CSC5024Z Information Retrieval/ETDsearch/solr-9.2.1/server/solr/indexCore, trusted=true
+2023-05-11 10:29:57.982 INFO  (qtp192694377-50) [ x:indexCore] o.a.s.c.SolrCore Opening new SolrCore at [/mnt/g/My Drive/BSc (Hons) CS/CSC5024Z Information Retrieval/ETDsearch/solr-9.2.1/server/solr/indexCore], dataDir=[/mnt/g/My Drive/BSc (Hons) CS/CSC5024Z Information Retrieval/ETDsearch/solr-9.2.1/server/solr/indexCore/data/]
+2023-05-11 10:30:10.793 INFO  (qtp192694377-50) [ x:indexCore] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2023-05-11 10:30:10.950 INFO  (qtp192694377-50) [ x:indexCore] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2023-05-11 10:30:10.950 INFO  (qtp192694377-50) [ x:indexCore] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2023-05-11 10:30:11.164 INFO  (qtp192694377-50) [ x:indexCore] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2023-05-11 10:30:11.176 INFO  (qtp192694377-50) [ x:indexCore] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2023-05-11 10:30:11.991 INFO  (qtp192694377-50) [ x:indexCore] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /mnt/g/My Drive/BSc (Hons) CS/CSC5024Z Information Retrieval/ETDsearch/solr-9.2.1/server/solr/indexCore/conf
+2023-05-11 10:30:12.428 INFO  (qtp192694377-50) [ x:indexCore] o.a.s.s.DirectSolrSpellChecker init: {name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal, accuracy=0.5, maxQueryFrequency=0.01, maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4}
+2023-05-11 10:30:12.587 INFO  (qtp192694377-50) [ x:indexCore] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2023-05-11 10:30:12.674 INFO  (qtp192694377-50) [ x:indexCore] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1765593330665652224
+2023-05-11 10:30:12.684 INFO  (searcherExecutor-12-thread-1-processing-indexCore) [ x:indexCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2023-05-11 10:30:12.684 INFO  (searcherExecutor-12-thread-1-processing-indexCore) [ x:indexCore] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2023-05-11 10:30:12.709 INFO  (searcherExecutor-12-thread-1-processing-indexCore) [ x:indexCore] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2023-05-11 10:30:12.730 INFO  (qtp192694377-50) [] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=indexCore&action=CREATE&instanceDir=indexCore&wt=json} status=0 QTime=25781
+2023-05-11 11:06:04.399 INFO  (ShutdownMonitor) [] o.e.j.s.Server Stopped Server@24fb6a80{STOPPING}[10.0.13,sto=0]
+2023-05-11 11:06:04.430 INFO  (ShutdownMonitor) [] o.e.j.s.AbstractConnector Stopped ServerConnector@25748410{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2023-05-11 11:06:04.563 INFO  (ShutdownMonitor) [] o.a.s.c.CoreContainer Shutting down CoreContainer instance=284660111
+2023-05-11 11:06:04.581 INFO  (coreCloseExecutor-18-thread-1) [ x:indexCore] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@1aa0bb15 indexCore
+2023-05-11 11:06:04.584 INFO  (coreCloseExecutor-18-thread-1) [ x:indexCore] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.indexCore tag=SolrCore@1aa0bb15
+2023-05-11 11:06:04.742 INFO  (coreCloseExecutor-18-thread-1) [ x:indexCore] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2023-05-11 11:06:04.834 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
+2023-05-11 11:06:04.875 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
+2023-05-11 11:06:04.896 INFO  (ShutdownMonitor) [] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
+2023-05-11 11:06:05.003 INFO  (ShutdownMonitor) [] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@6bc28a83{solr-jetty-context.xml,/solr,null,STOPPED}{/mnt/g/My Drive/BSc (Hons) CS/CSC5024Z Information Retrieval/ETDsearch/solr-9.2.1/server/solr-webapp/webapp}
