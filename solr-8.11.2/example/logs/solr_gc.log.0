@@ -1,0 +1,55 @@
+[2023-05-11T09:01:56.790+0200][0.018s] CardTable entry size: 512
+[2023-05-11T09:01:56.790+0200][0.019s] Using G1
+[2023-05-11T09:01:56.933+0200][0.166s] Version: 20.0.1+9-29 (release)
+[2023-05-11T09:01:56.933+0200][0.166s] CPUs: 8 total, 8 available
+[2023-05-11T09:01:56.933+0200][0.166s] Memory: 7973M
+[2023-05-11T09:01:56.933+0200][0.166s] Large Page Support: Disabled
+[2023-05-11T09:01:56.933+0200][0.166s] NUMA Support: Disabled
+[2023-05-11T09:01:56.933+0200][0.166s] Compressed Oops: Enabled (32-bit)
+[2023-05-11T09:01:56.933+0200][0.166s] Heap Region Size: 1M
+[2023-05-11T09:01:56.933+0200][0.166s] Heap Min Capacity: 512M
+[2023-05-11T09:01:56.933+0200][0.166s] Heap Initial Capacity: 512M
+[2023-05-11T09:01:56.933+0200][0.166s] Heap Max Capacity: 512M
+[2023-05-11T09:01:56.933+0200][0.168s] Pre-touch: Enabled
+[2023-05-11T09:01:56.933+0200][0.168s] Parallel Workers: 8
+[2023-05-11T09:01:56.933+0200][0.168s] Concurrent Workers: 2
+[2023-05-11T09:01:56.933+0200][0.168s] Concurrent Refinement Workers: 8
+[2023-05-11T09:01:56.933+0200][0.168s] Periodic GC: Disabled
+[2023-05-11T09:01:56.933+0200][0.169s] CDS archive(s) mapped at: [0x0000000800000000-0x0000000800c60000-0x0000000800c60000), size 12976128, SharedBaseAddress: 0x0000000800000000, ArchiveRelocationMode: 0.
+[2023-05-11T09:01:56.933+0200][0.169s] Compressed class space mapped at: 0x0000000801000000-0x0000000841000000, reserved size: 1073741824
+[2023-05-11T09:01:56.933+0200][0.169s] Narrow klass base: 0x0000000800000000, Narrow klass shift: 0, Narrow klass range: 0x100000000
+[2023-05-11T09:01:58.405+0200][1.628s] GC(0) Pause Young (Normal) (G1 Evacuation Pause)
+[2023-05-11T09:01:58.405+0200][1.628s] GC(0) Using 8 workers of 8 for evacuation
+[2023-05-11T09:01:58.413+0200][1.636s] GC(0)   Pre Evacuate Collection Set: 0.2ms
+[2023-05-11T09:01:58.413+0200][1.636s] GC(0)   Merge Heap Roots: 0.1ms
+[2023-05-11T09:01:58.413+0200][1.636s] GC(0)   Evacuate Collection Set: 6.7ms
+[2023-05-11T09:01:58.413+0200][1.636s] GC(0)   Post Evacuate Collection Set: 0.7ms
+[2023-05-11T09:01:58.413+0200][1.636s] GC(0)   Other: 0.5ms
+[2023-05-11T09:01:58.413+0200][1.636s] GC(0) Eden regions: 29->0(39)
+[2023-05-11T09:01:58.413+0200][1.636s] GC(0) Survivor regions: 0->4(4)
+[2023-05-11T09:01:58.413+0200][1.636s] GC(0) Old regions: 0->2
+[2023-05-11T09:01:58.413+0200][1.636s] GC(0) Archive regions: 0->0
+[2023-05-11T09:01:58.413+0200][1.636s] GC(0) Humongous regions: 0->0
+[2023-05-11T09:01:58.413+0200][1.636s] GC(0) Metaspace: 9931K(10240K)->9931K(10240K) NonClass: 8794K(8960K)->8794K(8960K) Class: 1136K(1280K)->1136K(1280K)
+[2023-05-11T09:01:58.413+0200][1.636s] GC(0) Pause Young (Normal) (G1 Evacuation Pause) 29M->5M(512M) 8.709ms
+[2023-05-11T09:01:58.413+0200][1.636s] GC(0) User=0.00s Sys=0.00s Real=0.01s
+[2023-05-11T09:01:59.475+0200][2.698s] GC(1) Pause Young (Normal) (G1 Evacuation Pause)
+[2023-05-11T09:01:59.475+0200][2.698s] GC(1) Using 8 workers of 8 for evacuation
+[2023-05-11T09:01:59.476+0200][2.707s] GC(1)   Pre Evacuate Collection Set: 0.1ms
+[2023-05-11T09:01:59.476+0200][2.708s] GC(1)   Merge Heap Roots: 0.1ms
+[2023-05-11T09:01:59.476+0200][2.708s] GC(1)   Evacuate Collection Set: 8.4ms
+[2023-05-11T09:01:59.476+0200][2.708s] GC(1)   Post Evacuate Collection Set: 0.9ms
+[2023-05-11T09:01:59.476+0200][2.708s] GC(1)   Other: 0.1ms
+[2023-05-11T09:01:59.476+0200][2.708s] GC(1) Eden regions: 39->0(211)
+[2023-05-11T09:01:59.476+0200][2.708s] GC(1) Survivor regions: 4->6(6)
+[2023-05-11T09:01:59.476+0200][2.708s] GC(1) Old regions: 2->10
+[2023-05-11T09:01:59.476+0200][2.708s] GC(1) Archive regions: 0->0
+[2023-05-11T09:01:59.476+0200][2.708s] GC(1) Humongous regions: 4->4
+[2023-05-11T09:01:59.476+0200][2.708s] GC(1) Metaspace: 16453K(16832K)->16453K(16832K) NonClass: 14576K(14784K)->14576K(14784K) Class: 1876K(2048K)->1876K(2048K)
+[2023-05-11T09:01:59.476+0200][2.708s] GC(1) Pause Young (Normal) (G1 Evacuation Pause) 48M->20M(512M) 9.974ms
+[2023-05-11T09:01:59.476+0200][2.708s] GC(1) User=0.00s Sys=0.00s Real=0.00s
+[2023-05-11T09:02:42.771+0200][45.993s] Heap
+[2023-05-11T09:02:42.771+0200][45.994s]  garbage-first heap   total 524288K, used 61442K [0x00000000e0000000, 0x0000000100000000)
+[2023-05-11T09:02:42.771+0200][45.994s]   region size 1024K, 47 young (48128K), 6 survivors (6144K)
+[2023-05-11T09:02:42.771+0200][45.994s]  Metaspace       used 20916K, committed 21248K, reserved 1114112K
+[2023-05-11T09:02:42.771+0200][45.994s]   class space    used 2419K, committed 2560K, reserved 1048576K
