@@ -2560,3 +2560,404 @@ org.apache.solr.api.ApiBag$ExceptionWithErrObject: error processing commands, er
 2023-05-11 13:04:05.803 INFO  (qtp858232531-311) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1683810245553} status=0 QTime=0
 2023-05-11 13:04:05.816 INFO  (qtp858232531-144) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1683810245553} status=0 QTime=0
 2023-05-11 13:04:05.824 INFO  (qtp858232531-311) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1683810245553} status=0 QTime=2
+2023-05-11 13:09:01.379 INFO  (qtp858232531-312) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1683810541274} status=0 QTime=0
+2023-05-11 13:09:01.384 INFO  (qtp858232531-310) [c:ETDSearch s:shard1 r:core_node5 x:ETDSearch_shard1_replica_n2] o.a.s.c.S.Request [ETDSearch_shard1_replica_n2]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1683810541358} status=0 QTime=3
+2023-05-11 13:09:01.384 INFO  (qtp858232531-311) [c:ETDSearch s:shard2 r:core_node8 x:ETDSearch_shard2_replica_n6] o.a.s.c.S.Request [ETDSearch_shard2_replica_n6]  webapp=/solr path=/config params={wt=json&_=1683810541358} status=0 QTime=2
+2023-05-11 13:09:01.463 INFO  (qtp858232531-143) [c:ETDSearch s:shard2 r:core_node8 x:ETDSearch_shard2_replica_n6] o.a.s.c.S.Request [ETDSearch_shard2_replica_n6]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1683810541358} status=0 QTime=1
+2023-05-11 13:09:01.538 INFO  (qtp858232531-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1683810541274} status=0 QTime=157
+2023-05-11 13:09:01.564 INFO  (qtp858232531-195) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1683810541274} status=0 QTime=0
+2023-05-11 13:09:01.574 INFO  (qtp858232531-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1683810541274} status=0 QTime=0
+2023-05-11 13:09:01.585 INFO  (qtp858232531-195) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1683810541274} status=0 QTime=2
+2023-05-11 13:22:56.104 INFO  (qtp858232531-311) [c:ETDSearch s:shard1 r:core_node5 x:ETDSearch_shard1_replica_n2] o.a.s.u.p.LogUpdateProcessorFactory [ETDSearch_shard1_replica_n2]  webapp=/solr path=/update params={}{} 0 409
+2023-05-11 13:22:56.333 INFO  (qtp858232531-310) [c:ETDSearch s:shard1 r:core_node5 x:ETDSearch_shard1_replica_n2] o.a.s.u.p.LogUpdateProcessorFactory [ETDSearch_shard1_replica_n2]  webapp=/solr path=/update params={update.distrib=TOLEADER&waitSearcher=true&openSearcher=true&commit=true&softCommit=false&distrib.from=http://169.254.96.104:8983/solr/ETDSearch_shard2_replica_n6/&commit_end_point=leaders&wt=javabin&version=2&expungeDeletes=false}{commit=} 0 158
+2023-05-11 13:22:56.364 INFO  (searcherExecutor-148-thread-1-processing-n:169.254.96.104:8983_solr x:ETDSearch_shard2_replica_n6 c:ETDSearch s:shard2 r:core_node8) [c:ETDSearch s:shard2 r:core_node8 x:ETDSearch_shard2_replica_n6] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2023-05-11 13:22:56.380 INFO  (searcherExecutor-148-thread-1-processing-n:169.254.96.104:8983_solr x:ETDSearch_shard2_replica_n6 c:ETDSearch s:shard2 r:core_node8) [c:ETDSearch s:shard2 r:core_node8 x:ETDSearch_shard2_replica_n6] o.a.s.c.SolrCore [ETDSearch_shard2_replica_n6]  Registered new searcher autowarm time: 3 ms
+2023-05-11 13:22:56.382 INFO  (qtp858232531-195) [c:ETDSearch s:shard2 r:core_node8 x:ETDSearch_shard2_replica_n6] o.a.s.u.p.LogUpdateProcessorFactory [ETDSearch_shard2_replica_n6]  webapp=/solr path=/update params={commit=true}{commit=} 0 263
+2023-05-11 13:23:01.324 INFO  (qtp858232531-311) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1683811381220} status=0 QTime=2
+2023-05-11 13:23:01.334 INFO  (qtp858232531-35) [c:ETDSearch s:shard2 r:core_node8 x:ETDSearch_shard2_replica_n6] o.a.s.c.S.Request [ETDSearch_shard2_replica_n6]  webapp=/solr path=/config params={wt=json&_=1683811381306} status=0 QTime=1
+2023-05-11 13:23:01.335 INFO  (qtp858232531-195) [c:ETDSearch s:shard2 r:core_node8 x:ETDSearch_shard2_replica_n6] o.a.s.c.S.Request [ETDSearch_shard2_replica_n6]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1683811381306} status=0 QTime=4
+2023-05-11 13:23:01.432 INFO  (qtp858232531-311) [c:ETDSearch s:shard2 r:core_node8 x:ETDSearch_shard2_replica_n6] o.a.s.c.S.Request [ETDSearch_shard2_replica_n6]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1683811381306} status=0 QTime=1
+2023-05-11 13:23:01.479 INFO  (qtp858232531-144) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1683811381220} status=0 QTime=154
+2023-05-11 13:23:01.509 INFO  (qtp858232531-310) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1683811381220} status=0 QTime=4
+2023-05-11 13:23:01.548 INFO  (qtp858232531-144) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1683811381220} status=0 QTime=1
+2023-05-11 13:23:01.558 INFO  (qtp858232531-310) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1683811381220} status=0 QTime=3
+2023-05-11 13:23:05.345 INFO  (qtp858232531-310) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:23:05.348 INFO  (qtp858232531-34) [c:ETDSearch s:shard1 r:core_node5 x:ETDSearch_shard1_replica_n2] o.a.s.c.S.Request [ETDSearch_shard1_replica_n2]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1683811381306} status=0 QTime=3
+2023-05-11 13:23:05.444 INFO  (qtp858232531-195) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1683811381220} status=0 QTime=99
+2023-05-11 13:23:05.453 INFO  (qtp858232531-311) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:23:05.468 INFO  (qtp858232531-195) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1683811381220} status=0 QTime=1
+2023-05-11 13:23:05.479 INFO  (qtp858232531-311) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1683811381220} status=0 QTime=4
+2023-05-11 13:23:07.184 INFO  (qtp858232531-311) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1683811381220} status=0 QTime=1
+2023-05-11 13:23:07.203 INFO  (qtp858232531-144) [c:ETDSearch s:shard2 r:core_node8 x:ETDSearch_shard2_replica_n6] o.a.s.c.S.Request [ETDSearch_shard2_replica_n6]  webapp=/solr path=/admin/file params={wt=json&_=1683811387176} status=0 QTime=18
+2023-05-11 13:23:07.260 INFO  (qtp858232531-310) [c:ETDSearch s:shard2 r:core_node8 x:ETDSearch_shard2_replica_n6] o.a.s.c.S.Request [ETDSearch_shard2_replica_n6]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1683811387176} status=0 QTime=40
+2023-05-11 13:23:07.315 INFO  (qtp858232531-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1683811381220} status=0 QTime=130
+2023-05-11 13:23:07.322 INFO  (qtp858232531-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:23:07.331 INFO  (qtp858232531-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:23:07.340 INFO  (qtp858232531-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1683811381220} status=0 QTime=2
+2023-05-11 13:23:09.497 INFO  (qtp858232531-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1683811381220} status=0 QTime=1
+2023-05-11 13:23:09.589 INFO  (qtp858232531-311) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1683811381220} status=0 QTime=91
+2023-05-11 13:23:09.599 INFO  (qtp858232531-144) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:23:09.607 INFO  (qtp858232531-311) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:23:09.616 INFO  (qtp858232531-144) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1683811381220} status=0 QTime=2
+2023-05-11 13:23:11.529 INFO  (qtp858232531-34) [c:ETDSearch s:shard2 r:core_node8 x:ETDSearch_shard2_replica_n6] o.a.s.c.S.Request [ETDSearch_shard2_replica_n6]  webapp=/solr path=/select params={df=_text_&distrib=false&fl=id&fl=score&shards.purpose=16388&start=0&fsv=true&q.op=OR&shard.url=http://169.254.96.104:8983/solr/ETDSearch_shard2_replica_n6/|http://169.254.96.104:7574/solr/ETDSearch_shard2_replica_n4/&rows=10&rid=-18&version=2&q=*:*&omitHeader=false&NOW=1683811391422&isShard=true&wt=javabin&_=1683811389471} hits=0 status=0 QTime=17
+2023-05-11 13:23:11.760 INFO  (qtp858232531-311) [c:ETDSearch s:shard2 r:core_node8 x:ETDSearch_shard2_replica_n6] o.a.s.c.S.Request [ETDSearch_shard2_replica_n6]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1683811389471} rid=-18 hits=0 status=0 QTime=337
+2023-05-11 13:23:11.801 INFO  (qtp858232531-144) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:23:11.824 INFO  (qtp858232531-310) [c:ETDSearch s:shard1 r:core_node5 x:ETDSearch_shard1_replica_n2] o.a.s.c.S.Request [ETDSearch_shard1_replica_n2]  webapp=/solr path=/select params={df=_text_&distrib=false&fl=id&fl=score&shards.purpose=16388&start=0&fsv=true&q.op=OR&shard.url=http://169.254.96.104:8983/solr/ETDSearch_shard1_replica_n2/|http://169.254.96.104:7574/solr/ETDSearch_shard1_replica_n1/&rows=10&rid=-19&version=2&q=*:*&omitHeader=false&NOW=1683811391807&isShard=true&wt=javabin&_=1683811389471} hits=0 status=0 QTime=9
+2023-05-11 13:23:11.827 INFO  (qtp858232531-335) [c:ETDSearch s:shard2 r:core_node8 x:ETDSearch_shard2_replica_n6] o.a.s.c.S.Request [ETDSearch_shard2_replica_n6]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1683811389471} rid=-19 hits=0 status=0 QTime=20
+2023-05-11 13:23:11.954 INFO  (qtp858232531-195) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1683811381220} status=0 QTime=151
+2023-05-11 13:23:11.962 INFO  (qtp858232531-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:23:11.980 INFO  (qtp858232531-195) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1683811381220} status=0 QTime=1
+2023-05-11 13:23:11.995 INFO  (qtp858232531-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1683811381220} status=0 QTime=4
+2023-05-11 13:23:15.960 INFO  (qtp858232531-195) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1683811381220} status=0 QTime=2
+2023-05-11 13:23:15.973 INFO  (qtp858232531-34) [c:ETDSearch s:shard2 r:core_node8 x:ETDSearch_shard2_replica_n6] o.a.s.c.S.Request [ETDSearch_shard2_replica_n6]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1683811381306} status=0 QTime=6
+2023-05-11 13:23:16.083 INFO  (qtp858232531-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1683811381220} status=0 QTime=124
+2023-05-11 13:23:16.083 INFO  (qtp858232531-335) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:23:16.100 INFO  (qtp858232531-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1683811381220} status=0 QTime=1
+2023-05-11 13:23:16.111 INFO  (qtp858232531-335) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1683811381220} status=0 QTime=2
+2023-05-11 13:23:25.959 INFO  (qtp858232531-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:23:26.067 INFO  (qtp858232531-144) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1683811381220} status=0 QTime=107
+2023-05-11 13:23:26.076 INFO  (qtp858232531-195) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:23:26.084 INFO  (qtp858232531-144) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:23:26.091 INFO  (qtp858232531-195) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1683811381220} status=0 QTime=3
+2023-05-11 13:23:26.718 INFO  (qtp858232531-144) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1683811381220} status=0 QTime=1
+2023-05-11 13:23:26.839 INFO  (qtp858232531-311) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1683811381220} status=0 QTime=117
+2023-05-11 13:23:26.846 INFO  (qtp858232531-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:23:26.854 INFO  (qtp858232531-311) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1683811381220} status=0 QTime=1
+2023-05-11 13:23:26.870 INFO  (qtp858232531-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1683811381220} status=0 QTime=3
+2023-05-11 13:23:27.379 INFO  (qtp858232531-195) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:23:27.384 INFO  (qtp858232531-311) [c:ETDSearch s:shard2 r:core_node8 x:ETDSearch_shard2_replica_n6] o.a.s.c.S.Request [ETDSearch_shard2_replica_n6]  webapp=/solr path=/admin/file params={wt=json&_=1683811387176} status=0 QTime=8
+2023-05-11 13:23:27.434 INFO  (qtp858232531-34) [c:ETDSearch s:shard2 r:core_node8 x:ETDSearch_shard2_replica_n6] o.a.s.c.S.Request [ETDSearch_shard2_replica_n6]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1683811387176} status=0 QTime=24
+2023-05-11 13:23:27.511 INFO  (qtp858232531-310) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1683811381220} status=0 QTime=130
+2023-05-11 13:23:27.520 INFO  (qtp858232531-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:23:27.534 INFO  (qtp858232531-310) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1683811381220} status=0 QTime=1
+2023-05-11 13:23:27.547 INFO  (qtp858232531-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1683811381220} status=0 QTime=3
+2023-05-11 13:23:27.870 INFO  (qtp858232531-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:23:27.894 INFO  (qtp858232531-144) [c:ETDSearch s:shard1 r:core_node5 x:ETDSearch_shard1_replica_n2] o.a.s.c.S.Request [ETDSearch_shard1_replica_n2]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1683811407859} status=0 QTime=21
+2023-05-11 13:23:27.970 INFO  (qtp858232531-195) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1683811381220} status=0 QTime=1
+2023-05-11 13:23:27.975 INFO  (qtp858232531-310) [c:ETDSearch s:shard2 r:core_node8 x:ETDSearch_shard2_replica_n6] o.a.s.c.S.Request [ETDSearch_shard2_replica_n6]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1683811407859} status=0 QTime=0
+2023-05-11 13:23:28.037 INFO  (qtp858232531-311) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1683811381220} status=0 QTime=164
+2023-05-11 13:23:28.056 INFO  (qtp858232531-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:23:28.088 INFO  (qtp858232531-335) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1683811381220} status=0 QTime=2
+2023-05-11 13:23:28.100 INFO  (qtp858232531-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1683811381220} status=0 QTime=3
+2023-05-11 13:23:28.155 INFO  (qtp858232531-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1683811381220} status=0 QTime=115
+2023-05-11 13:23:28.155 INFO  (qtp858232531-311) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:23:28.171 INFO  (qtp858232531-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1683811381220} status=0 QTime=1
+2023-05-11 13:23:28.184 INFO  (qtp858232531-311) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1683811381220} status=0 QTime=1
+2023-05-11 13:23:28.642 INFO  (qtp858232531-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:23:28.655 INFO  (qtp858232531-195) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=CLUSTERSTATUS&wt=json&_=1683811381220} status=0 QTime=12
+2023-05-11 13:23:28.757 INFO  (qtp858232531-335) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1683811381220} status=0 QTime=114
+2023-05-11 13:23:28.763 INFO  (qtp858232531-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:23:28.772 INFO  (qtp858232531-335) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1683811381220} status=0 QTime=1
+2023-05-11 13:23:28.796 INFO  (qtp858232531-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1683811381220} status=0 QTime=3
+2023-05-11 13:23:36.470 INFO  (qtp858232531-143) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:23:36.583 INFO  (qtp858232531-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1683811381220} status=0 QTime=112
+2023-05-11 13:23:36.590 INFO  (qtp858232531-311) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:23:36.602 INFO  (qtp858232531-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:23:36.616 INFO  (qtp858232531-311) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1683811381220} status=0 QTime=2
+2023-05-11 13:23:39.093 INFO  (qtp858232531-34) [c:ETDSearch s:shard2 r:core_node8 x:ETDSearch_shard2_replica_n6] o.a.s.c.S.Request [ETDSearch_shard2_replica_n6]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1683811389471} rid=-20 hits=0 status=0 QTime=23
+2023-05-11 13:23:39.142 INFO  (qtp858232531-311) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1683811381220} status=0 QTime=1
+2023-05-11 13:23:39.171 INFO  (qtp858232531-310) [c:ETDSearch s:shard2 r:core_node8 x:ETDSearch_shard2_replica_n6] o.a.s.c.S.Request [ETDSearch_shard2_replica_n6]  webapp=/solr path=/select params={df=_text_&distrib=false&fl=id&fl=score&shards.purpose=16388&start=0&fsv=true&q.op=OR&shard.url=http://169.254.96.104:8983/solr/ETDSearch_shard2_replica_n6/|http://169.254.96.104:7574/solr/ETDSearch_shard2_replica_n4/&rows=10&rid=-21&version=2&q=*:*&omitHeader=false&NOW=1683811419147&isShard=true&wt=javabin&_=1683811389471} hits=0 status=0 QTime=19
+2023-05-11 13:23:39.171 INFO  (qtp858232531-34) [c:ETDSearch s:shard1 r:core_node5 x:ETDSearch_shard1_replica_n2] o.a.s.c.S.Request [ETDSearch_shard1_replica_n2]  webapp=/solr path=/select params={df=_text_&distrib=false&fl=id&fl=score&shards.purpose=16388&start=0&fsv=true&q.op=OR&shard.url=http://169.254.96.104:8983/solr/ETDSearch_shard1_replica_n2/|http://169.254.96.104:7574/solr/ETDSearch_shard1_replica_n1/&rows=10&rid=-21&version=2&q=*:*&omitHeader=false&NOW=1683811419147&isShard=true&wt=javabin&_=1683811389471} hits=0 status=0 QTime=19
+2023-05-11 13:23:39.178 INFO  (qtp858232531-35) [c:ETDSearch s:shard1 r:core_node5 x:ETDSearch_shard1_replica_n2] o.a.s.c.S.Request [ETDSearch_shard1_replica_n2]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1683811389471} rid=-21 hits=0 status=0 QTime=30
+2023-05-11 13:23:39.277 INFO  (qtp858232531-144) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1683811381220} status=0 QTime=134
+2023-05-11 13:23:39.284 INFO  (qtp858232531-143) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:23:39.290 INFO  (qtp858232531-144) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:23:39.299 INFO  (qtp858232531-143) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1683811381220} status=0 QTime=3
+2023-05-11 13:23:48.634 INFO  (qtp858232531-195) [c:ETDSearch s:shard1 r:core_node5 x:ETDSearch_shard1_replica_n2] o.a.s.u.p.LogUpdateProcessorFactory [ETDSearch_shard1_replica_n2]  webapp=/solr path=/update params={}{} 0 118
+2023-05-11 13:23:48.654 INFO  (qtp858232531-35) [c:ETDSearch s:shard2 r:core_node8 x:ETDSearch_shard2_replica_n6] o.a.s.u.p.LogUpdateProcessorFactory [ETDSearch_shard2_replica_n6]  webapp=/solr path=/update params={update.distrib=TOLEADER&waitSearcher=true&openSearcher=true&commit=true&softCommit=false&distrib.from=http://169.254.96.104:8983/solr/ETDSearch_shard1_replica_n2/&commit_end_point=leaders&wt=javabin&version=2&expungeDeletes=false}{commit=} 0 11
+2023-05-11 13:23:48.670 INFO  (qtp858232531-144) [c:ETDSearch s:shard1 r:core_node5 x:ETDSearch_shard1_replica_n2] o.a.s.u.p.LogUpdateProcessorFactory [ETDSearch_shard1_replica_n2]  webapp=/solr path=/update params={commit=true}{commit=} 0 29
+2023-05-11 13:25:16.408 INFO  (qtp858232531-143) [c:ETDSearch s:shard2 r:core_node8 x:ETDSearch_shard2_replica_n6] o.a.s.c.S.Request [ETDSearch_shard2_replica_n6]  webapp=/solr path=/select params={df=_text_&distrib=false&fl=id&fl=score&shards.purpose=16388&start=0&fsv=true&q.op=OR&shard.url=http://169.254.96.104:8983/solr/ETDSearch_shard2_replica_n6/|http://169.254.96.104:7574/solr/ETDSearch_shard2_replica_n4/&rows=10&rid=-22&version=2&q=*:*&omitHeader=false&NOW=1683811516401&isShard=true&wt=javabin&_=1683811389471} hits=0 status=0 QTime=1
+2023-05-11 13:25:16.410 INFO  (qtp858232531-34) [c:ETDSearch s:shard2 r:core_node8 x:ETDSearch_shard2_replica_n6] o.a.s.c.S.Request [ETDSearch_shard2_replica_n6]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1683811389471} rid=-22 hits=0 status=0 QTime=10
+2023-05-11 13:25:23.581 INFO  (qtp858232531-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1683811381220} status=0 QTime=1
+2023-05-11 13:25:23.591 INFO  (qtp858232531-144) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=CLUSTERSTATUS&wt=json&_=1683811381220} status=0 QTime=6
+2023-05-11 13:25:23.676 INFO  (qtp858232531-310) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1683811381220} status=0 QTime=1
+2023-05-11 13:25:23.711 INFO  (qtp858232531-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1683811381220} status=0 QTime=135
+2023-05-11 13:25:23.727 INFO  (qtp858232531-143) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:25:23.738 INFO  (qtp858232531-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:25:23.750 INFO  (qtp858232531-143) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1683811381220} status=0 QTime=3
+2023-05-11 13:25:23.828 INFO  (qtp858232531-335) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/zookeeper params={path=/configs/&detail=false&wt=json&_=1683811523568} status=0 QTime=257
+2023-05-11 13:25:24.954 INFO  (qtp858232531-311) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:25:24.967 INFO  (qtp858232531-195) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=CLUSTERSTATUS&wt=json&_=1683811381220} status=0 QTime=10
+2023-05-11 13:25:25.017 INFO  (qtp858232531-310) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1683811381220} status=0 QTime=1
+2023-05-11 13:25:25.092 INFO  (qtp858232531-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1683811381220} status=0 QTime=137
+2023-05-11 13:25:25.106 INFO  (qtp858232531-143) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:25:25.133 INFO  (qtp858232531-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:25:25.142 INFO  (qtp858232531-143) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1683811381220} status=0 QTime=2
+2023-05-11 13:25:25.143 INFO  (qtp858232531-144) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/zookeeper params={path=/configs/&detail=false&wt=json&_=1683811523568} status=0 QTime=182
+2023-05-11 13:25:29.484 INFO  (qtp858232531-311) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:25:29.495 INFO  (qtp858232531-310) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=CLUSTERSTATUS&wt=json&_=1683811381220} status=0 QTime=11
+2023-05-11 13:25:29.594 INFO  (qtp858232531-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1683811381220} status=0 QTime=112
+2023-05-11 13:25:29.600 INFO  (qtp858232531-143) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:25:29.609 INFO  (qtp858232531-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1683811381220} status=0 QTime=1
+2023-05-11 13:25:29.617 INFO  (qtp858232531-143) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1683811381220} status=0 QTime=2
+2023-05-11 13:25:30.799 INFO  (qtp858232531-143) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:25:30.803 INFO  (qtp858232531-144) [c:ETDSearch s:shard2 r:core_node8 x:ETDSearch_shard2_replica_n6] o.a.s.c.S.Request [ETDSearch_shard2_replica_n6]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1683811381306} status=0 QTime=3
+2023-05-11 13:25:30.917 INFO  (qtp858232531-195) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1683811381220} status=0 QTime=118
+2023-05-11 13:25:30.926 INFO  (qtp858232531-310) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:25:30.933 INFO  (qtp858232531-195) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:25:30.937 INFO  (qtp858232531-310) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1683811381220} status=0 QTime=4
+2023-05-11 13:25:31.359 INFO  (qtp858232531-195) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:25:31.368 INFO  (qtp858232531-311) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=CLUSTERSTATUS&wt=json&_=1683811381220} status=0 QTime=7
+2023-05-11 13:25:31.462 INFO  (qtp858232531-143) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1683811381220} status=0 QTime=102
+2023-05-11 13:25:31.470 INFO  (qtp858232531-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:25:31.473 INFO  (qtp858232531-143) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:25:31.489 INFO  (qtp858232531-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1683811381220} status=0 QTime=3
+2023-05-11 13:25:31.814 INFO  (qtp858232531-144) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:25:31.816 INFO  (qtp858232531-143) [c:ETDSearch s:shard1 r:core_node5 x:ETDSearch_shard1_replica_n2] o.a.s.c.S.Request [ETDSearch_shard1_replica_n2]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1683811381306} status=0 QTime=2
+2023-05-11 13:25:31.915 INFO  (qtp858232531-310) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1683811381220} status=0 QTime=101
+2023-05-11 13:25:31.922 INFO  (qtp858232531-195) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:25:31.932 INFO  (qtp858232531-310) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1683811381220} status=0 QTime=1
+2023-05-11 13:25:31.940 INFO  (qtp858232531-195) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1683811381220} status=0 QTime=3
+2023-05-11 13:25:33.774 INFO  (qtp858232531-310) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:25:33.780 INFO  (qtp858232531-311) [c:ETDSearch s:shard1 r:core_node5 x:ETDSearch_shard1_replica_n2] o.a.s.c.S.Request [ETDSearch_shard1_replica_n2]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1683811407859} status=0 QTime=0
+2023-05-11 13:25:33.834 INFO  (qtp858232531-143) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1683811381220} status=0 QTime=1
+2023-05-11 13:25:33.839 INFO  (qtp858232531-195) [c:ETDSearch s:shard1 r:core_node5 x:ETDSearch_shard1_replica_n2] o.a.s.c.S.Request [ETDSearch_shard1_replica_n2]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1683811407859} status=0 QTime=3
+2023-05-11 13:25:33.917 INFO  (qtp858232531-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1683811381220} status=0 QTime=139
+2023-05-11 13:25:33.926 INFO  (qtp858232531-310) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:25:33.963 INFO  (qtp858232531-335) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1683811381220} status=0 QTime=2
+2023-05-11 13:25:33.976 INFO  (qtp858232531-310) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1683811381220} status=0 QTime=4
+2023-05-11 13:25:34.031 INFO  (qtp858232531-143) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1683811381220} status=0 QTime=111
+2023-05-11 13:25:34.040 INFO  (qtp858232531-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:25:34.047 INFO  (qtp858232531-143) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:25:34.061 INFO  (qtp858232531-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1683811381220} status=0 QTime=4
+2023-05-11 13:25:39.435 INFO  (qtp858232531-143) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1683811381220} status=0 QTime=1
+2023-05-11 13:25:39.440 INFO  (qtp858232531-144) [c:ETDSearch s:shard2 r:core_node8 x:ETDSearch_shard2_replica_n6] o.a.s.c.S.Request [ETDSearch_shard2_replica_n6]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1683811381306} status=0 QTime=3
+2023-05-11 13:25:39.542 INFO  (qtp858232531-335) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1683811381220} status=0 QTime=106
+2023-05-11 13:25:39.549 INFO  (qtp858232531-310) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:25:39.553 INFO  (qtp858232531-335) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:25:39.569 INFO  (qtp858232531-310) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1683811381220} status=0 QTime=4
+2023-05-11 13:27:14.908 INFO  (qtp858232531-310) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1683811381220} status=0 QTime=1
+2023-05-11 13:27:14.920 INFO  (qtp858232531-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1683811634901&since=0} status=0 QTime=10
+2023-05-11 13:27:15.018 INFO  (qtp858232531-195) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1683811381220} status=0 QTime=111
+2023-05-11 13:27:15.044 INFO  (qtp858232531-144) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:27:15.049 INFO  (qtp858232531-195) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1683811381220} status=0 QTime=0
+2023-05-11 13:27:15.058 INFO  (qtp858232531-144) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1683811381220} status=0 QTime=1
+2023-05-11 13:27:20.783 INFO  (qtp858232531-195) [c:ETDSearch s:shard1 r:core_node5 x:ETDSearch_shard1_replica_n2] o.a.s.u.p.LogUpdateProcessorFactory [ETDSearch_shard1_replica_n2]  webapp=/solr path=/update params={}{} 0 104
+2023-05-11 13:27:20.830 INFO  (qtp858232531-35) [c:ETDSearch s:shard2 r:core_node8 x:ETDSearch_shard2_replica_n6] o.a.s.u.p.LogUpdateProcessorFactory [ETDSearch_shard2_replica_n6]  webapp=/solr path=/update params={update.distrib=TOLEADER&waitSearcher=true&openSearcher=true&commit=true&softCommit=false&distrib.from=http://169.254.96.104:8983/solr/ETDSearch_shard1_replica_n2/&commit_end_point=leaders&wt=javabin&version=2&expungeDeletes=false}{commit=} 0 25
+2023-05-11 13:27:20.845 INFO  (qtp858232531-144) [c:ETDSearch s:shard1 r:core_node5 x:ETDSearch_shard1_replica_n2] o.a.s.u.p.LogUpdateProcessorFactory [ETDSearch_shard1_replica_n2]  webapp=/solr path=/update params={commit=true}{commit=} 0 49
+2023-05-11 13:27:23.885 INFO  (qtp858232531-335) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1683811643878&since=0} status=0 QTime=0
+2023-05-11 13:27:23.886 INFO  (qtp858232531-310) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1683811643703} status=0 QTime=1
+2023-05-11 13:27:23.968 INFO  (qtp858232531-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1683811643703} status=0 QTime=90
+2023-05-11 13:27:24.004 INFO  (qtp858232531-195) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1683811643703} status=0 QTime=0
+2023-05-11 13:27:24.064 INFO  (qtp858232531-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1683811643703} status=0 QTime=1
+2023-05-11 13:27:24.068 INFO  (qtp858232531-195) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1683811643704} status=0 QTime=1
+2023-05-11 13:27:30.876 INFO  (qtp858232531-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1683811643703} status=0 QTime=0
+2023-05-11 13:27:30.882 INFO  (qtp858232531-144) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=CLUSTERSTATUS&wt=json&_=1683811643703} status=0 QTime=6
+2023-05-11 13:27:30.996 INFO  (qtp858232531-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1683811643703} status=0 QTime=121
+2023-05-11 13:27:31.003 INFO  (qtp858232531-335) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1683811643703} status=0 QTime=0
+2023-05-11 13:27:31.028 INFO  (qtp858232531-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1683811643703} status=0 QTime=1
+2023-05-11 13:27:31.037 INFO  (qtp858232531-335) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1683811643704} status=0 QTime=2
+2023-05-11 13:29:59.353 INFO  (qtp858232531-311) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1683811643703} status=0 QTime=0
+2023-05-11 13:29:59.359 INFO  (qtp858232531-34) [c:ETDSearch s:shard2 r:core_node8 x:ETDSearch_shard2_replica_n6] o.a.s.c.S.Request [ETDSearch_shard2_replica_n6]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1683811799342} status=0 QTime=3
+2023-05-11 13:29:59.465 INFO  (qtp858232531-344) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1683811643703} status=0 QTime=109
+2023-05-11 13:29:59.472 INFO  (qtp858232531-143) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1683811643703} status=0 QTime=0
+2023-05-11 13:29:59.479 INFO  (qtp858232531-344) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1683811643703} status=0 QTime=0
+2023-05-11 13:29:59.489 INFO  (qtp858232531-143) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1683811643704} status=0 QTime=3
+2023-05-11 13:31:09.454 INFO  (qtp858232531-34) [c:ETDSearch s:shard1 r:core_node5 x:ETDSearch_shard1_replica_n2] o.a.s.u.p.LogUpdateProcessorFactory [ETDSearch_shard1_replica_n2]  webapp=/solr path=/update params={}{} 0 91
+2023-05-11 13:31:09.487 INFO  (qtp858232531-35) [c:ETDSearch s:shard2 r:core_node8 x:ETDSearch_shard2_replica_n6] o.a.s.u.p.LogUpdateProcessorFactory [ETDSearch_shard2_replica_n6]  webapp=/solr path=/update params={update.distrib=TOLEADER&waitSearcher=true&openSearcher=true&commit=true&softCommit=false&distrib.from=http://169.254.96.104:8983/solr/ETDSearch_shard1_replica_n2/&commit_end_point=leaders&wt=javabin&version=2&expungeDeletes=false}{commit=} 0 19
+2023-05-11 13:31:09.499 INFO  (qtp858232531-310) [c:ETDSearch s:shard1 r:core_node5 x:ETDSearch_shard1_replica_n2] o.a.s.u.p.LogUpdateProcessorFactory [ETDSearch_shard1_replica_n2]  webapp=/solr path=/update params={commit=true}{commit=} 0 40
+2023-05-11 13:48:32.144 INFO  (qtp858232531-310) [c:ETDSearch s:shard2 r:core_node8 x:ETDSearch_shard2_replica_n6] o.a.s.u.p.LogUpdateProcessorFactory [ETDSearch_shard2_replica_n6]  webapp=/solr path=/update params={}{} 0 118
+2023-05-11 13:48:32.182 INFO  (qtp858232531-309) [c:ETDSearch s:shard1 r:core_node5 x:ETDSearch_shard1_replica_n2] o.a.s.u.p.LogUpdateProcessorFactory [ETDSearch_shard1_replica_n2]  webapp=/solr path=/update params={update.distrib=TOLEADER&waitSearcher=true&openSearcher=true&commit=true&softCommit=false&distrib.from=http://169.254.96.104:8983/solr/ETDSearch_shard2_replica_n6/&commit_end_point=leaders&wt=javabin&version=2&expungeDeletes=false}{commit=} 0 29
+2023-05-11 13:48:32.207 INFO  (qtp858232531-34) [c:ETDSearch s:shard2 r:core_node8 x:ETDSearch_shard2_replica_n6] o.a.s.u.p.LogUpdateProcessorFactory [ETDSearch_shard2_replica_n6]  webapp=/solr path=/update params={commit=true}{commit=} 0 66
+2023-05-11 13:48:36.534 INFO  (qtp858232531-311) [c:ETDSearch s:shard2 r:core_node8 x:ETDSearch_shard2_replica_n6] o.a.s.u.p.LogUpdateProcessorFactory [ETDSearch_shard2_replica_n6]  webapp=/solr path=/update params={update.distrib=TOLEADER&waitSearcher=true&openSearcher=true&commit=true&softCommit=false&distrib.from=http://169.254.96.104:8983/solr/ETDSearch_shard1_replica_n2/&commit_end_point=leaders&wt=javabin&version=2&expungeDeletes=false}{commit=} 0 15
+2023-05-11 13:48:36.551 INFO  (qtp858232531-344) [c:ETDSearch s:shard1 r:core_node5 x:ETDSearch_shard1_replica_n2] o.a.s.u.p.LogUpdateProcessorFactory [ETDSearch_shard1_replica_n2]  webapp=/solr path=/update params={commit=true}{commit=} 0 33
+2023-05-11 13:48:46.518 INFO  (qtp858232531-143) [c:ETDSearch s:shard1 r:core_node5 x:ETDSearch_shard1_replica_n2] o.a.s.u.p.LogUpdateProcessorFactory [ETDSearch_shard1_replica_n2]  webapp=/solr path=/update params={}{} 0 3
+2023-05-11 13:48:46.519 ERROR (qtp858232531-143) [c:ETDSearch s:shard1 r:core_node5 x:ETDSearch_shard1_replica_n2] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Unexpected <doc> tag without an <add> tag surrounding it. => org.apache.solr.common.SolrException: Unexpected <doc> tag without an <add> tag surrounding it.
+	at org.apache.solr.handler.loader.XMLLoader.processUpdate(XMLLoader.java:265)
+org.apache.solr.common.SolrException: Unexpected <doc> tag without an <add> tag surrounding it.
+	at org.apache.solr.handler.loader.XMLLoader.processUpdate(XMLLoader.java:265) ~[?:?]
+	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:190) ~[?:?]
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:97) ~[?:?]
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:82) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:791) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:564) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+2023-05-11 13:48:47.002 INFO  (qtp858232531-309) [c:ETDSearch s:shard2 r:core_node8 x:ETDSearch_shard2_replica_n6] o.a.s.u.p.LogUpdateProcessorFactory [ETDSearch_shard2_replica_n6]  webapp=/solr path=/update params={update.distrib=TOLEADER&waitSearcher=true&openSearcher=true&commit=true&softCommit=false&distrib.from=http://169.254.96.104:8983/solr/ETDSearch_shard1_replica_n2/&commit_end_point=leaders&wt=javabin&version=2&expungeDeletes=false}{commit=} 0 7
+2023-05-11 13:48:47.016 INFO  (qtp858232531-310) [c:ETDSearch s:shard1 r:core_node5 x:ETDSearch_shard1_replica_n2] o.a.s.u.p.LogUpdateProcessorFactory [ETDSearch_shard1_replica_n2]  webapp=/solr path=/update params={commit=true}{commit=} 0 22
+2023-05-11 13:48:54.948 INFO  (qtp858232531-34) [c:ETDSearch s:shard2 r:core_node8 x:ETDSearch_shard2_replica_n6] o.a.s.u.p.LogUpdateProcessorFactory [ETDSearch_shard2_replica_n6]  webapp=/solr path=/update params={}{} 0 0
+2023-05-11 13:48:54.948 ERROR (qtp858232531-34) [c:ETDSearch s:shard2 r:core_node8 x:ETDSearch_shard2_replica_n6] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Unexpected <doc> tag without an <add> tag surrounding it. => org.apache.solr.common.SolrException: Unexpected <doc> tag without an <add> tag surrounding it.
+	at org.apache.solr.handler.loader.XMLLoader.processUpdate(XMLLoader.java:265)
+org.apache.solr.common.SolrException: Unexpected <doc> tag without an <add> tag surrounding it.
+	at org.apache.solr.handler.loader.XMLLoader.processUpdate(XMLLoader.java:265) ~[?:?]
+	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:190) ~[?:?]
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:97) ~[?:?]
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:82) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:791) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:564) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+2023-05-11 13:48:55.408 INFO  (qtp858232531-311) [c:ETDSearch s:shard2 r:core_node8 x:ETDSearch_shard2_replica_n6] o.a.s.u.p.LogUpdateProcessorFactory [ETDSearch_shard2_replica_n6]  webapp=/solr path=/update params={update.distrib=TOLEADER&waitSearcher=true&openSearcher=true&commit=true&softCommit=false&distrib.from=http://169.254.96.104:8983/solr/ETDSearch_shard1_replica_n2/&commit_end_point=leaders&wt=javabin&version=2&expungeDeletes=false}{commit=} 0 10
+2023-05-11 13:48:55.420 INFO  (qtp858232531-143) [c:ETDSearch s:shard1 r:core_node5 x:ETDSearch_shard1_replica_n2] o.a.s.u.p.LogUpdateProcessorFactory [ETDSearch_shard1_replica_n2]  webapp=/solr path=/update params={commit=true}{commit=} 0 24
+2023-05-11 13:48:59.761 INFO  (qtp858232531-309) [c:ETDSearch s:shard1 r:core_node5 x:ETDSearch_shard1_replica_n2] o.a.s.u.p.LogUpdateProcessorFactory [ETDSearch_shard1_replica_n2]  webapp=/solr path=/update params={}{} 0 99
+2023-05-11 13:48:59.781 INFO  (qtp858232531-309) [c:ETDSearch s:shard1 r:core_node5 x:ETDSearch_shard1_replica_n2] o.a.s.u.p.LogUpdateProcessorFactory [ETDSearch_shard1_replica_n2]  webapp=/solr path=/update params={update.distrib=TOLEADER&waitSearcher=true&openSearcher=true&commit=true&softCommit=false&distrib.from=http://169.254.96.104:8983/solr/ETDSearch_shard2_replica_n6/&commit_end_point=leaders&wt=javabin&version=2&expungeDeletes=false}{commit=} 0 12
+2023-05-11 13:48:59.792 INFO  (qtp858232531-34) [c:ETDSearch s:shard2 r:core_node8 x:ETDSearch_shard2_replica_n6] o.a.s.u.p.LogUpdateProcessorFactory [ETDSearch_shard2_replica_n6]  webapp=/solr path=/update params={commit=true}{commit=} 0 26
+2023-05-11 13:49:09.213 INFO  (qtp858232531-344) [c:ETDSearch s:shard2 r:core_node8 x:ETDSearch_shard2_replica_n6] o.a.s.u.p.LogUpdateProcessorFactory [ETDSearch_shard2_replica_n6]  webapp=/solr path=/update params={}{} 0 1
+2023-05-11 13:49:09.213 ERROR (qtp858232531-344) [c:ETDSearch s:shard2 r:core_node8 x:ETDSearch_shard2_replica_n6] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Unexpected <doc> tag without an <add> tag surrounding it. => org.apache.solr.common.SolrException: Unexpected <doc> tag without an <add> tag surrounding it.
+	at org.apache.solr.handler.loader.XMLLoader.processUpdate(XMLLoader.java:265)
+org.apache.solr.common.SolrException: Unexpected <doc> tag without an <add> tag surrounding it.
+	at org.apache.solr.handler.loader.XMLLoader.processUpdate(XMLLoader.java:265) ~[?:?]
+	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:190) ~[?:?]
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:97) ~[?:?]
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:82) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:791) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:564) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:1623) [?:?]
+2023-05-11 13:49:09.681 INFO  (qtp858232531-34) [c:ETDSearch s:shard2 r:core_node8 x:ETDSearch_shard2_replica_n6] o.a.s.u.p.LogUpdateProcessorFactory [ETDSearch_shard2_replica_n6]  webapp=/solr path=/update params={update.distrib=TOLEADER&waitSearcher=true&openSearcher=true&commit=true&softCommit=false&distrib.from=http://169.254.96.104:8983/solr/ETDSearch_shard1_replica_n2/&commit_end_point=leaders&wt=javabin&version=2&expungeDeletes=false}{commit=} 0 11
+2023-05-11 13:49:09.690 INFO  (qtp858232531-311) [c:ETDSearch s:shard1 r:core_node5 x:ETDSearch_shard1_replica_n2] o.a.s.u.p.LogUpdateProcessorFactory [ETDSearch_shard1_replica_n2]  webapp=/solr path=/update params={commit=true}{commit=} 0 21
+2023-05-11 13:49:14.697 INFO  (qtp858232531-344) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1683812954458} status=0 QTime=3
+2023-05-11 13:49:14.701 INFO  (qtp858232531-309) [c:ETDSearch s:shard2 r:core_node8 x:ETDSearch_shard2_replica_n6] o.a.s.c.S.Request [ETDSearch_shard2_replica_n6]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1683812954685} status=0 QTime=4
+2023-05-11 13:49:14.818 INFO  (qtp858232531-143) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1683812954459} status=0 QTime=121
+2023-05-11 13:49:14.826 INFO  (qtp858232531-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1683812954459} status=0 QTime=1
+2023-05-11 13:49:14.833 INFO  (qtp858232531-143) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1683812954459} status=0 QTime=1
+2023-05-11 13:49:14.842 INFO  (qtp858232531-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1683812954460} status=0 QTime=4
+2023-05-11 13:49:15.921 INFO  (qtp858232531-143) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1683812954458} status=0 QTime=0
+2023-05-11 13:49:16.025 INFO  (qtp858232531-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1683812954459} status=0 QTime=105
+2023-05-11 13:49:16.032 INFO  (qtp858232531-309) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1683812954459} status=0 QTime=0
+2023-05-11 13:49:16.040 INFO  (qtp858232531-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1683812954459} status=0 QTime=1
+2023-05-11 13:49:16.055 INFO  (qtp858232531-309) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1683812954460} status=0 QTime=2
+2023-05-11 13:49:16.503 INFO  (qtp858232531-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1683812954458} status=0 QTime=0
+2023-05-11 13:49:16.520 INFO  (qtp858232531-310) [c:ETDSearch s:shard1 r:core_node5 x:ETDSearch_shard1_replica_n2] o.a.s.c.S.Request [ETDSearch_shard1_replica_n2]  webapp=/solr path=/admin/file params={wt=json&_=1683812956477} status=0 QTime=13
+2023-05-11 13:49:16.573 INFO  (qtp858232531-35) [c:ETDSearch s:shard1 r:core_node5 x:ETDSearch_shard1_replica_n2] o.a.s.c.S.Request [ETDSearch_shard1_replica_n2]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1683812956477} status=0 QTime=39
+2023-05-11 13:49:16.628 INFO  (qtp858232531-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1683812954459} status=0 QTime=123
+2023-05-11 13:49:16.635 INFO  (qtp858232531-143) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1683812954459} status=0 QTime=0
+2023-05-11 13:49:16.643 INFO  (qtp858232531-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1683812954459} status=0 QTime=0
+2023-05-11 13:49:16.654 INFO  (qtp858232531-143) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1683812954460} status=0 QTime=2
+2023-05-11 13:49:19.024 INFO  (qtp858232531-311) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1683812954458} status=0 QTime=0
+2023-05-11 13:49:19.139 INFO  (qtp858232531-344) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1683812954459} status=0 QTime=116
+2023-05-11 13:49:19.147 INFO  (qtp858232531-309) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1683812954459} status=0 QTime=0
+2023-05-11 13:49:19.158 INFO  (qtp858232531-344) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1683812954459} status=0 QTime=1
+2023-05-11 13:49:19.167 INFO  (qtp858232531-309) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1683812954460} status=0 QTime=2
+2023-05-11 13:49:21.842 INFO  (qtp858232531-311) [c:ETDSearch s:shard2 r:core_node8 x:ETDSearch_shard2_replica_n6] o.a.s.c.S.Request [ETDSearch_shard2_replica_n6]  webapp=/solr path=/select params={df=_text_&distrib=false&fl=id&fl=score&shards.purpose=16388&start=0&fsv=true&q.op=OR&shard.url=http://169.254.96.104:8983/solr/ETDSearch_shard2_replica_n6/|http://169.254.96.104:7574/solr/ETDSearch_shard2_replica_n4/&rows=10&rid=-23&version=2&q=*:*&omitHeader=false&NOW=1683812961819&isShard=true&wt=javabin&_=1683812955904} hits=0 status=0 QTime=2
+2023-05-11 13:49:21.853 INFO  (qtp858232531-344) [c:ETDSearch s:shard2 r:core_node8 x:ETDSearch_shard2_replica_n6] o.a.s.c.S.Request [ETDSearch_shard2_replica_n6]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1683812955904} rid=-23 hits=0 status=0 QTime=21
+2023-05-11 13:49:21.901 INFO  (qtp858232531-309) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1683812954458} status=0 QTime=0
+2023-05-11 13:49:21.917 INFO  (qtp858232531-35) [c:ETDSearch s:shard2 r:core_node8 x:ETDSearch_shard2_replica_n6] o.a.s.c.S.Request [ETDSearch_shard2_replica_n6]  webapp=/solr path=/select params={df=_text_&distrib=false&fl=id&fl=score&shards.purpose=16388&start=0&fsv=true&q.op=OR&shard.url=http://169.254.96.104:8983/solr/ETDSearch_shard2_replica_n6/|http://169.254.96.104:7574/solr/ETDSearch_shard2_replica_n4/&rows=10&rid=-24&version=2&q=*:*&omitHeader=false&NOW=1683812961911&isShard=true&wt=javabin&_=1683812955904} hits=0 status=0 QTime=1
+2023-05-11 13:49:21.921 INFO  (qtp858232531-143) [c:ETDSearch s:shard1 r:core_node5 x:ETDSearch_shard1_replica_n2] o.a.s.c.S.Request [ETDSearch_shard1_replica_n2]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1683812955904} rid=-24 hits=0 status=0 QTime=9
+2023-05-11 13:49:22.023 INFO  (qtp858232531-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1683812954459} status=0 QTime=121
+2023-05-11 13:49:22.032 INFO  (qtp858232531-311) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1683812954459} status=0 QTime=0
+2023-05-11 13:49:22.039 INFO  (qtp858232531-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1683812954459} status=0 QTime=1
+2023-05-11 13:49:22.051 INFO  (qtp858232531-311) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1683812954460} status=0 QTime=3
