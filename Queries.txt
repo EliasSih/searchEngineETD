@@ -1,0 +1,16 @@
+curl -X POST -H "Content-type:application/json" --data-binary "{\"add-field\": {\"name\":\"dc:creator\", \"type\":\"text_general\", \"stored\":true}}" http://localhost:8983/solr/ETDSearch/schema
+curl -X POST -H "Content-type:application/json" --data-binary "{\"replace-field\": {\"name\":\"dc:creator\", \"type\":\"text_general\", \"stored\":true, \"indexed\":true.}}" http://localhost:8983/solr/ETDSearch/schema
+
+
+curl -X POST -H "Content-type:application/json" --data-binary "{\"add-field\": {\"name\":\"dc:title\", \"type\":\"text_general\", \"stored\":true, \"indexed\":true}}" http://localhost:8983/solr/ETDSearch/schema
+curl -X POST -H "Content-type:application/json" --data-binary "{\"add-field\": {\"name\":\"dc:description\", \"type\":\"text_general\", \"stored\":true, \"indexed\":true}}" http://localhost:8983/solr/ETDSearch/schema
+curl -X POST -H "Content-type:application/json" --data-binary "{\"add-field\": {\"name\":\"dc:subject\", \"type\":\"text_general\", \"stored\":true, \"multiValued\":true, \"indexed\":true}}" http://localhost:8983/solr/ETDSearch/schema
+
+
+curl -X POST -H "Content-type:application/json" --data-binary "{\"add-field\": {\"name\":\"dc:language\", \"type\":\"text_general\", \"stored\":true}}" http://localhost:8983/solr/ETDSearch/schema
+curl -X POST -H "Content-type:application/json" --data-binary "{\"add-field\": {\"name\":\"dc:date\", \"type\":\"pdate\", \"stored\":true, \"docValues\":true}}" http://localhost:8983/solr/ETDSearch/schema
+
+
+
+
+\"docValues\":true -> this takes care of date sorting

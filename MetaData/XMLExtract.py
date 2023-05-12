@@ -24,6 +24,8 @@ def parse_xml(xml_file):
         description = metadata.find('dc:description', namespaces).text if metadata.find('dc:description', namespaces) is not None else None
         date = metadata.find('dc:date', namespaces).text if metadata.find('dc:date', namespaces) is not None else None
         #identifier = metadata.find('dc:identifier', namespaces).text if metadata.find('dc:identifier', namespaces) is not None else None
+        language = metadata.find('dc:language', namespaces).text if metadata.find('dc:language', namespaces) is not None else None
+        relation = metadata.find('dc:relation', namespaces).text if metadata.find('dc:relation', namespaces) is not None else None
 
         count = 0
         subject = []
@@ -41,14 +43,16 @@ def parse_xml(xml_file):
             'subject': subject,
             'description': description,
             'date': date,
-            'identifier': identifier
+            'identifier': identifier,
+            'language': language,
+            'relation': relation
         })
 
     return items
 
 
 
-xml_file = 'MetaData/toFormat.xml'
+xml_file = 'MetaData/aaaaaaaa.xml'
 items = parse_xml(xml_file)
 #for item in items:
     #print(item)
@@ -73,7 +77,9 @@ for item in items:
     #subject = ET.SubElement(element1, 'field')
     description = ET.SubElement(element1, 'field')
     date = ET.SubElement(element1, 'field')
-    identifier = ET.SubElement(element1, 'field')
+    language = ET.SubElement(element1, 'field')
+    relation = ET.SubElement(element1, 'field')
+    #identifier = ET.SubElement(element1, 'field')
 
     # Adding attributes to the tags under
     # `items`
@@ -82,11 +88,13 @@ for item in items:
     #subject.set('name', 'subject')
     description.set('name', 'description')
     date.set('name', 'date')
-    identifier.set('name', 'identifier')
+    language.set('name', 'language')
+    relation.set('name', 'relation')
+    #identifier.set('name', 'identifier')
 
     # Adding text between the `E4` and `D5`
     # subtag
-    title.text = "hello"
+    title.text = item["title"]
     creator.text = item["creator"]
     for i in item["subject"]:
         subject = ET.SubElement(element1, 'field')
@@ -94,6 +102,8 @@ for item in items:
         subject.text = i
     description.text = item["description"]
     date.text = item["date"]
+    language.text = item["language"]
+    relation.text = item["relation"]
     for i in item["identifier"]:
         identifier = ET.SubElement(element1, 'field')
         identifier.set('name', 'identifier')
@@ -108,5 +118,6 @@ for item in items:
 
     # Opening a file under the name `items2.xml`,
     # with operation mode `wb` (write + binary)
-    with open("GFG.xml", "wb") as f:
+    with open("Reformattedaaaaaaaa.xml", "wb") as f:
         f.write(b_xml)
+        print("parsed")
