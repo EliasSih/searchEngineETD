@@ -51,73 +51,87 @@ def parse_xml(xml_file):
     return items
 
 
-
-xml_file = 'MetaData/aaaaaaaa.xml'
-items = parse_xml(xml_file)
-#for item in items:
-    #print(item)
-#    pass
-
-
-# This is the parent (root) tag
-# onto which other tags would be
-# created
-data = ET.Element('add')
-
-for item in items:
-     
-    # Adding a subtag named `Opening`
-    # inside our root tag
-    element1 = ET.SubElement(data, 'doc')
-
-    # Adding subtags under the `Opening`
-    # subtag
-    title = ET.SubElement(element1, 'field')
-    creator = ET.SubElement(element1, 'field')
-    #subject = ET.SubElement(element1, 'field')
-    description = ET.SubElement(element1, 'field')
-    date = ET.SubElement(element1, 'field')
-    language = ET.SubElement(element1, 'field')
-    relation = ET.SubElement(element1, 'field')
-    #identifier = ET.SubElement(element1, 'field')
-
-    # Adding attributes to the tags under
-    # `items`
-    title.set('name', 'title')
-    creator.set('name', 'creator')
-    #subject.set('name', 'subject')
-    description.set('name', 'description')
-    date.set('name', 'date')
-    language.set('name', 'language')
-    relation.set('name', 'relation')
-    #identifier.set('name', 'identifier')
-
-    # Adding text between the `E4` and `D5`
-    # subtag
-    title.text = item["title"]
-    creator.text = item["creator"]
-    for i in item["subject"]:
-        subject = ET.SubElement(element1, 'field')
-        subject.set('name', 'subject')
-        subject.text = i
-    description.text = item["description"]
-    date.text = item["date"]
-    language.text = item["language"]
-    relation.text = item["relation"]
-    for i in item["identifier"]:
-        identifier = ET.SubElement(element1, 'field')
-        identifier.set('name', 'identifier')
-        identifier.text = i
+def Extract(xml_file, outputFile):
+    items = parse_xml(xml_file)
+    #for item in items:
+        #print(item)
+    #    pass
 
 
-    # Converting the xml data to byte object,
-    # for allowing flushing data to file
-    # stream
-    b_xml = ET.tostring(data)
-    b_xml = b_xml
+    # This is the parent (root) tag
+    # onto which other tags would be
+    # created
+    data = ET.Element('add')
+    count = 0
+    for item in items:
+        
+        # Adding a subtag named `Opening`
+        # inside our root tag
+        element1 = ET.SubElement(data, 'doc')
 
-    # Opening a file under the name `items2.xml`,
-    # with operation mode `wb` (write + binary)
-    with open("Reformattedaaaaaaaa.xml", "wb") as f:
-        f.write(b_xml)
-        print("parsed")
+        # Adding subtags under the `Opening`
+        # subtag
+        title = ET.SubElement(element1, 'field')
+        creator = ET.SubElement(element1, 'field')
+        #subject = ET.SubElement(element1, 'field')
+        description = ET.SubElement(element1, 'field')
+        date = ET.SubElement(element1, 'field')
+        language = ET.SubElement(element1, 'field')
+        relation = ET.SubElement(element1, 'field')
+        #identifier = ET.SubElement(element1, 'field')
+
+        # Adding attributes to the tags under
+        # `items`
+        title.set('name', 'title')
+        creator.set('name', 'creator')
+        #subject.set('name', 'subject')
+        description.set('name', 'description')
+        date.set('name', 'date')
+        language.set('name', 'language')
+        relation.set('name', 'relation')
+        #identifier.set('name', 'identifier')
+
+        # Adding text between the `E4` and `D5`
+        # subtag
+        title.text = item["title"]
+        creator.text = item["creator"]
+        for i in item["subject"]:
+            subject = ET.SubElement(element1, 'field')
+            subject.set('name', 'subject')
+            subject.text = i
+        description.text = item["description"]
+        date.text = item["date"]
+        language.text = item["language"]
+        relation.text = item["relation"]
+        for i in item["identifier"]:
+            identifier = ET.SubElement(element1, 'field')
+            identifier.set('name', 'identifier')
+            identifier.text = i
+
+
+        # Converting the xml data to byte object,
+        # for allowing flushing data to file
+        # stream
+        b_xml = ET.tostring(data)
+        b_xml = b_xml
+
+        
+        # Opening a file under the name `items2.xml`,
+        # with operation mode `wb` (write + binary)
+        with open("ReformattedData\\"+outputFile, "wb") as f:
+            f.write(b_xml)
+            count = count+1
+            print(count)
+    return count
+
+
+total = 0
+import glob
+txtfiles = []
+for file in glob.glob("Metadata\*.xml"):
+#for file in ["Metadata\\aaaaaaaa.xml"]:
+    txtfiles.append(file)
+    ls = file.split("\\")
+    outputFile = ls[1]
+    total = total + Extract(file, outputFile)
+print("Total number of docs:", total)
