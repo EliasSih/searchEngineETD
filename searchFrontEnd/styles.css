@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1.text-center {
+    margin-top: 20%;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+}
+.result {
+    margin-bottom: 20px;
+}
+.result-title {
+    font-size: 20px;
+    color: #1a0dab;
+}
+.result-title a {
+    text-decoration: none;
+}
+.result-title a:hover {
+    text-decoration: underline;
+}
+.result-url {
+    color: #006621;
+    font-size: 14px;
+}
+.result-description {
+    color: #545454;
+    font-size: 14px;
+}
+.res-div{
+  margin: 20px;
+}
+.chat {
+    background-color: #545454;
+    margin-top: 10%;
+    padding: 10px;
+}
+.chat-text{
+  color: #006621;
+}
