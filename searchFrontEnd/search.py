@@ -4,7 +4,7 @@ import os
 
 app = Flask(__name__)
 
-solr = pysolr.Solr('http://localhost:8983/solr/ETDSearch', always_commit=True)
+solr = pysolr.Solr('http://localhost:8983/solr/testCollection', always_commit=True)
 solr.ping()
 print("Current working directory:", os.getcwd())
 
@@ -20,13 +20,6 @@ def search():
 
     # Field specific query
     results = solr.search("description:" + query, **{"rows": 100000})  # To get all results (up to 100000)
-    print("Saw {0} result(s).".format(len(results)))
-    for result in results:
-        print("Title:", result['title'])
-        print("Identifier:", result['identifier'])
-        print("Description:", result['description'])
-
-        pass
 
 
     # results_for_template = [{'title': result['title'], 'identifier': result['identifier'], 'description': result['description']} for result in results]

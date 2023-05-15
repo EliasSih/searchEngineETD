@@ -31,3 +31,18 @@ form {
     color: #545454;
     font-size: 14px;
 }
+.chatbox {
+    background-color: #cdc6c5;
+    border-radius: 20px;
+    height: 700px;
+    /* width: 90%; */
+    margin-top: 5%;
+    margin-left: 20px;
+    padding: 3%; 
+}
+#textbox {
+    width: 70%;
+}
+#searchButton {
+    display: inline-block;
+}
