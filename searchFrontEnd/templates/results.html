@@ -20,7 +20,9 @@
                         <a href="{{ result['identifier'][0] }}">{{ result['title'][0] }}</a>
                     </div>
                     <div class="result-url">{{ result['identifier'][0]  }}</div>
+                    {% if "description" in result %}
                     <div class="result-description">{{ result['description'][0][:1000] + "..."}}</div>
+                    {% endif %}
                 </div>
                 {% endfor %}
             </div>
