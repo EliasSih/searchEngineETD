@@ -41,8 +41,21 @@ form {
     padding: 3%; 
 }
 #textbox {
-    width: 70%;
+    display: inline-block;
 }
 #searchButton {
     display: inline-block;
+}
+.filters {
+    width: 100%;
+    height: 150px;
+}
+.author {
+    width: 50%;
+}
+.subject {
+    width: 80%;
+}
+.year {
+    width: 90%;
 }

@@ -25,6 +25,34 @@
                 {% endfor %}
             </div>
             <div class="col-md-4 chat">
+                <form action="/search" class="filters mt-2">
+                    <label for="author">Author:</label>
+                    <select name="author" id="author" class="author">
+                        <option value="1" selected hidden></option>
+                        {% for a in authors %}
+                            <option value="{{ a }}">{{ a }}</option>
+                        {% endfor %}
+                    </select>
+                    <br>
+                    <br>
+                    <input type="text" name="subject" class="subject" placeholder="Subject...">
+                    <br>
+                    <br>
+                    <label for="yearfrom">From:</label>
+                    <select name="yearfrom" id="yearfrom">
+                        <option value="1" selected hidden></option>
+                        {% for y in years %}
+                            <option value="{{ y }}">{{ y }}</option>
+                        {% endfor %}
+                    </select>
+                    <label for="yearto">To:</label>
+                    <select name="yearto" id="yearto">
+                        <option value="1" selected hidden></option>
+                        {% for y in years %}
+                            <option value="{{ y }}">{{ y }}</option>
+                        {% endfor %}
+                    </select>
+                </form>
                 <div class="chatbox">
                     <p class="chat-text">----Chat gpt result window---</p>
                 </div>
