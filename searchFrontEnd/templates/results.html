@@ -10,26 +10,10 @@
       <div class="row">
             <div class="col-md-8 res-div">
                 <form action="/search" method="get" class="form-group mt-5">
-                    <input type="text" name="q" class="form-control" id="textbox" placeholder="Search...">
-                    <button type="submit" class="btn btn-primary mt-2 float-right" id="searchButton">Search</button>
-                </form>
-                <h1>Search results for "{{ query }}"</h1>
-                {% for result in results %}
-                <div class="result">
-                    <div class="result-title">
-                        <a href="{{ result['identifier'][0] }}">{{ result['title'][0] }}</a>
-                    </div>
-                    <div class="result-url">{{ result['identifier'][0]  }}</div>
-                    {% if "description" in result %}
-                    <div class="result-description">{{ result['description'][0][:1000] + "..."}}</div>
-                    {% endif %}
-                </div>
-                {% endfor %}
-            </div>
-            <div class="col-md-4 chat">
-                <form action="/search" class="filters mt-2">
+                    <input type="text" name="q" class="form-control" id="textbox" placeholder="{{query}}">
                     <label for="author">Author:</label>
                     <select name="author" id="author" class="author">
+                        
                         <option value="1" selected hidden></option>
                         {% for a in authors %}
                             <option value="{{ a }}">{{ a }}</option>
@@ -54,6 +38,25 @@
                             <option value="{{ y }}">{{ y }}</option>
                         {% endfor %}
                     </select>
+                    <button type="submit" class="btn btn-primary mt-2 float-right" id="searchButton">Search</button>
+                </form>
+                <h1>Search results for "{{ query }}"</h1>
+                {% for result in results %}
+                <div class="result">
+                    <div class="result-title">
+                        <a href="{{ result['identifier'][0] }}">{{ result['title'][0] }}</a>
+                    </div>
+                    <div class="result-url">{{ result['identifier'][0]  }}</div>
+                    {% if "description" in result %}
+                    <div class="result-description">{{ result['description'][0][:1000] + "..."}}</div>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+            <div class="col-md-4 chat">
+                <form action="/search" method="get" class="filters mt-2">
+                    
+                    <button type="submit" class="btn btn-primary mt-2 float-right" id="applyButton">Apply</button>
                 </form>
                 <div class="chatbox">
                     <p class="chat-text">----Chat gpt result window---</p>

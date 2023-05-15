@@ -42,8 +42,9 @@ def home():
 def search():
     print("search route")
     query = request.args.get('q')
-    print(query)
+    print(request.args.get('subject'))
 
+    print(query)
     #The query
     params = {
     'rows': '100000', #Make 0 to return no results and only fields
@@ -52,12 +53,12 @@ def search():
     results = solr.search("description:" + query, **params)  # To get all results (up to 100000)
     #results = solr.search(query, **params)
     
-    #authors = getFactes(query, "creator")
-    #years = getFactes(query, "date")
-    authors = ["daniel", "lewis", "charles"]
-    years = [2012, 2015, 2016, 2009]
+    authors = getFactes(query, "creator")
+    years = getFactes(query, "date")
 
     # results_for_template = [{'title': result['title'], 'identifier': result['identifier'], 'description': result['description']} for result in results]
+
+    
 
     return render_template('results.html', query=query, results=results, authors = authors, years = years)
 
