@@ -21,10 +21,13 @@ def search():
     # Field specific query
     results = solr.search("description:" + query, **{"rows": 100000})  # To get all results (up to 100000)
 
+    authors = ["Mike", "Simon", "Craig", "David", "Mary", "Anne"]
+    years = ["2012", "2015", "1998", "2016", "1998"]
+    years.sort()
 
     # results_for_template = [{'title': result['title'], 'identifier': result['identifier'], 'description': result['description']} for result in results]
 
-    return render_template('results.html', query=query, results=results)
+    return render_template('results.html', query=query, results=results, authors = authors, years = years)
 
 if __name__ == '__main__':
     app.run(debug=True)
