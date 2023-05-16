@@ -19,9 +19,14 @@
               <label class="authorLabel" for="author">Author:</label>
               <select name="author" id="author" class="author">
 
-                  <option value="Any" selected hidden></option>
+                  <option value="Any" selected>_</option>
                   {% for a in authors %}
-                      <option value="{{ a }}">{{ a }}</option>
+                  {% if a==aut %}
+                    <option value="{{ a }}" selected>{{ a }}</option>
+                  {% else %}
+                  <option value="{{ a }}">{{ a }}</option>
+                  {% endif %}
+                      
                   {% endfor %}
               </select>
               <input type="text" name="subject" class="subject" placeholder="Subject...">
@@ -29,16 +34,24 @@
               <br>
               <label for="yearfrom">From:</label>
               <select name="yearfrom" id="yearfrom">
-                  <option value="1" selected hidden></option>
+                  <option value="1" selected>_</option>
                   {% for y in years %}
-                      <option value="{{ y }}">{{ y }}</option>
+                  {% if y==yearfrom %}
+                  <option value="{{ y }}" selected>{{ y }}</option>
+                {% else %}
+                <option value="{{ y }}">{{ y }}</option>
+                {% endif %}
                   {% endfor %}
               </select>
               <label for="yearto">To:</label>
               <select name="yearto" id="yearto">
-                  <option value="1" selected hidden></option>
+                  <option value="2023" selected>_</option>
                   {% for y in years %}
-                      <option value="{{ y }}">{{ y }}</option>
+                  {% if y==yearto %}
+                  <option value="{{ y }}" selected>{{ y }}</option>
+                {% else %}
+                <option value="{{ y }}">{{ y }}</option>
+                {% endif %}
                   {% endfor %}
               </select>
               <br>

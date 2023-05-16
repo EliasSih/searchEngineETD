@@ -50,7 +50,7 @@ def basicSearch():
     }
     results = solr.search(query, **params)
     print("Saw {0} result(s).".format(len(results)))
-    authors = getFactes(query, "creator")
+    authors = getFactes(query, "creator_str")
     years = getFactes(query, "date")
     return render_template('results.html', query=query, results=results, authors = authors, years = years)
 
@@ -58,19 +58,29 @@ def basicSearch():
 def search():
     print("search route")
     query = request.args.get('q')
+    originalQuery = query
     if request.args.get('subject') != "":
         sub = request.args.get('subject')
         query = query + " subject:" + sub
+    else:
+        sub = None
     if request.args.get('author') != "Any":
         aut = request.args.get('author')
         query = query + " creator:" + aut
+    else:
+        aut = None
     if request.args.get('yearfrom') < request.args.get('yearto'):
+        yearfrom = request.args.get('yearfrom')
+        yearto = request.args.get('yearto')
+        if request.args.get('yearfrom') == "1":
+            pass
+        else:
         #Year error handling 
-        query = query + " date:" + "[{0} TO {1}]".format(request.args.get('yearfrom'),request.args.get('yearto'))
-
+            query = query + " date:" + "[{0} TO {1}]".format(request.args.get('yearfrom'),request.args.get('yearto'))
+    else:
+        yearfrom = None
+        yearto = None
     
-        
-
     print(query)
     #The query
     params = {
@@ -81,11 +91,11 @@ def search():
     #results = solr.search(query, **params)
     print("Saw {0} result(s).".format(len(results)))
     
-    authors = getFactes(query, "creator")
+    authors = getFactes(query, "creator_str")
     years = getFactes(query, "date")
 
     # results_for_template = [{'title': result['title'], 'identifier': result['identifier'], 'description': result['description']} for result in results]
-    return render_template('results.html', query=query, results=results, authors = authors, years = years)
+    return render_template('results.html', query=originalQuery, results=results, authors = authors, years = years, sub = sub, aut = aut, yearfrom = yearfrom, yearto=yearto)
 
 if __name__ == '__main__':
     app.run(debug=True)
