@@ -99,8 +99,15 @@ def Extract(xml_file, outputFile):
             subject = ET.SubElement(element1, 'field')
             subject.set('name', 'subject')
             subject.text = i
+        
+        #date.text = item["date"]
+        if item["date"] is None:
+            date.text = "1111"
+        else:
+            date.text = item["date"]
+
         description.text = item["description"]
-        date.text = item["date"]
+        #date.text = item["date"]
         language.text = item["language"]
         relation.text = item["relation"]
         for i in item["identifier"]:
@@ -128,7 +135,7 @@ def Extract(xml_file, outputFile):
 total = 0
 import glob
 txtfiles = []
-for file in glob.glob("Metadata\*.xml"):
+for file in glob.glob("Metadata\\aaaaaad*.xml"):
 #for file in ["Metadata\\aaaaaaaa.xml"]:
     txtfiles.append(file)
     ls = file.split("\\")
