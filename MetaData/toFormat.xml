@@ -1,0 +1,39 @@
+<ListRecords>
+<record>
+<header>
+<identifier>oai:union.ndltd.org:ADTP/100073</identifier>
+<datestamp>2011-09-07T02:15:34Z</datestamp>
+<setSpec>ADTP</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+<dc:title>Immunohistochemical study of marmoset periodontal ligament microvasculature : a confocal laser scanning microscopic study</dc:title>
+<dc:creator>Ashworth, Jonathan F.</dc:creator>
+<dc:subject>Marmosets Anatomy</dc:subject>
+<dc:subject>Periodontal ligament</dc:subject>
+<dc:subject>Immunohistochemistry</dc:subject>
+<dc:description>Bibliography: leaves 110-120. Reports immunohistochemical investigations into the biological response to the application of an orthodontic force to the buccal segment teeth of marmosets.</dc:description><dc:date>2005</dc:date><dc:identifier>http://web4.library.adelaide.edu.au/theses/09DM/09dma831.pdf</dc:identifier>
+<dc:identifier>NBD:22945251</dc:identifier>
+<dc:language>EN</dc:language>
+<dc:relation>SUA</dc:relation>
+</oai_dc:dc>
+</metadata>
+<about>
+<provenance xmlns="http://www.openarchives.org/OAI/2.0/provenance" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/provenance http://www.openarchives.org/OAI/2.0/provenance.xsd"><originDescription harvestDate="2011-08-11T04:15:35Z" altered="false"><baseURL>http://alcme.oclc.org/ndltd/servlet/OAIHandler</baseURL><identifier>100073</identifier><datestamp>2010-10-12</datestamp><metadataNamespace>http://www.openarchives.org/OAI/2.0/oai_dc/</metadataNamespace><originDescription harvestDate="2010-10-10T06:15:53Z" altered="false"><baseURL>http://metasuite.nun.unsw.edu.au:9004/CMD/OAI</baseURL><identifier>100073</identifier><datestamp>2006-01-04T02:49:54Z</datestamp><metadataNamespace>http://www.openarchives.org/OAI/2.0/oai_dc/</metadataNamespace></originDescription></originDescription></provenance>
+</about>
+</record>
+<record>
+<header>
+<identifier>oai:union.ndltd.org:ADTP/100074</identifier>
+<datestamp>2011-09-07T02:15:34Z</datestamp>
+<setSpec>ADTP</setSpec>
+</header>
+<metadata>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd"><dc:title>H-reflex in human masseter</dc:title><dc:creator>Scutter, Sheila.</dc:creator><dc:subject>Masseter muscle Physiology</dc:subject><dc:description>Copies of author&#039;s previously published articles inserted. Bibliography: leaves 172-204. H-relexes are used to determine the reflex connections of muscle spindle afferents, the exitability of the motorneuron pool and the integrity of the reflex pathways. However, H-relexes are small and can be difficult to elicit in the masseter, limiting their use in the investigation of the masticatory system. This study investigated the recruitment of masseter motorneurons into the H-reflex, compared to the recruitment occuring during voluntary isometric biting, to determine the distribution of the effective muscle spindle input.</dc:description><dc:date>1999</dc:date><dc:identifier>http://web4.library.adelaide.edu.au/theses/09PH/09phs4377.pdf</dc:identifier><dc:identifier>NBD:22945252</dc:identifier><dc:language>EN</dc:language><dc:relation>SUA</dc:relation></oai_dc:dc>
+</metadata>
+<about>
+<provenance xmlns="http://www.openarchives.org/OAI/2.0/provenance" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/provenance http://www.openarchives.org/OAI/2.0/provenance.xsd"><originDescription harvestDate="2011-08-11T04:15:35Z" altered="false"><baseURL>http://alcme.oclc.org/ndltd/servlet/OAIHandler</baseURL><identifier>100074</identifier><datestamp>2010-10-12</datestamp><metadataNamespace>http://www.openarchives.org/OAI/2.0/oai_dc/</metadataNamespace><originDescription harvestDate="2010-10-10T06:15:53Z" altered="false"><baseURL>http://metasuite.nun.unsw.edu.au:9004/CMD/OAI</baseURL><identifier>100074</identifier><datestamp>2006-01-04T02:49:54Z</datestamp><metadataNamespace>http://www.openarchives.org/OAI/2.0/oai_dc/</metadataNamespace></originDescription></originDescription></provenance>
+</about>
+</record>
+
+</ListRecords>
