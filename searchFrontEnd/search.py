@@ -59,11 +59,11 @@ def search():
     print("search route")
     query = request.args.get('q')
     originalQuery = query
-    if request.args.get('subject') != "":
-        sub = request.args.get('subject')
-        query = query + " subject:" + sub
-    else:
-        sub = None
+    #if request.args.get('subject') != "":
+    #    sub = request.args.get('subject')
+    #    query = query + " subject:" + sub
+    #else:
+    #    sub = None
     if request.args.get('author') != "Any":
         aut = request.args.get('author')
         query = query + " creator:" + aut
@@ -95,7 +95,7 @@ def search():
     years = getFactes(query, "date")
 
     # results_for_template = [{'title': result['title'], 'identifier': result['identifier'], 'description': result['description']} for result in results]
-    return render_template('results.html', query=originalQuery, results=results, authors = authors, years = years, sub = sub, aut = aut, yearfrom = yearfrom, yearto=yearto)
+    return render_template('results.html', query=originalQuery, results=results, authors = authors, years = years, aut = aut, yearfrom = yearfrom, yearto=yearto)
 
 if __name__ == '__main__':
     app.run(debug=True)
