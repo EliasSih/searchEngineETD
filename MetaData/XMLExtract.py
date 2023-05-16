@@ -1,4 +1,5 @@
 import xml.etree.ElementTree as ET
+import re
 
 def parse_xml(xml_file):
     # Parse XML with ElementTree
@@ -102,9 +103,14 @@ def Extract(xml_file, outputFile):
         
         #date.text = item["date"]
         if item["date"] is None:
+            date.text = "0000"
+        elif item["date"] == "<yyyy>" or item["date"] == "n/a":
             date.text = "1111"
         else:
-            date.text = item["date"]
+            date.text = re.search(r"[1-3][0-9]{3}", item["date"]).group(0)
+            print(item["title"],date.text)
+            #print(re.search(r"[1-3][0-9]{3}", item["date"]).group(0))
+
 
         description.text = item["description"]
         #date.text = item["date"]
@@ -135,7 +141,7 @@ def Extract(xml_file, outputFile):
 total = 0
 import glob
 txtfiles = []
-for file in glob.glob("Metadata\\aaaaaad*.xml"):
+for file in glob.glob("Metadata\\aaaaaadb.xml"):
 #for file in ["Metadata\\aaaaaaaa.xml"]:
     txtfiles.append(file)
     ls = file.split("\\")
