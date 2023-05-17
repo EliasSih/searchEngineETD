@@ -11,11 +11,11 @@
         <form action="/search" method="get" class="form-group mt-5">
           <div class="row">
             <div class="col-md-8">
-                <a href="/">Home</a>
+                <a class="home" href="/">Home</a>
               <input type="text" name="q" class="form-control" id="textbox" value="{{query}}">
               <button type="submit" class="btn btn-primary mt-2 float-right" id="searchButton">Search</button>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4  filter">
               <label class="authorLabel" for="author">Author:</label>
               <select name="author" id="author" class="author">
 
@@ -26,7 +26,7 @@
                   {% else %}
                   <option value="{{ a }}">{{ a }}</option>
                   {% endif %}
-                      
+
                   {% endfor %}
               </select>
               <input type="text" name="subject" class="subject" placeholder="Subject...">
@@ -83,8 +83,9 @@
                 </form> -->
                 <div class="chatbox">
                     <p class="chat-text">----Chat gpt result window---</p>
+                    <br>
+                    <p class="chat-text">{{resultGPT}}</p>
                 </div>
-
             </div>
 
       </div>
