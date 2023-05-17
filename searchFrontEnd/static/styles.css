@@ -71,3 +71,9 @@ form {
   text-align: left;
   margin-bottom: 3%;
 }
+.filter{
+  padding-left: 20px;
+}
+.home{
+  border: 2px;
+}
