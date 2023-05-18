@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 import pysolr
 import os
-import openai
+import openai #Need to import this
 
 app = Flask(__name__)
 
@@ -38,6 +38,9 @@ def getFactes(query, facetOn):
     return dicttolist(removeZeros(facetDict))
 
 def chatGPT(prompt):
+
+    openai.api_key = "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"
+
     messages = [{"role": "system", "content": "You are a helpful search engine."}]
 
     query = {}
@@ -45,7 +48,9 @@ def chatGPT(prompt):
     query['content'] = prompt
     messages.append(query)
 
-    response = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=messages)
+    response = openai.ChatCompletion.create(model="gpt-3.5-turbo",messages=messages)
+
+
 
     try:
         result = response['choices'][0]['message']['content']
@@ -102,7 +107,7 @@ def search():
     #The query
     params = {
     'rows': '100000', #Make 0 to return no results and only fields
-    "q.op" : "AND",
+    "q.op" : "AND", 
     }
     results = solr.search(query, **params)  # To get all results (up to 100000)
     #results = solr.search(query, **params)
@@ -113,6 +118,8 @@ def search():
 
     #request ai powered response from openai
     resultGPT = chatGPT(originalQuery)
+    print("original query:", originalQuery)
+    print("ChatGPT Response")
     print(resultGPT)
 
     # results_for_template = [{'title': result['title'], 'identifier': result['identifier'], 'description': result['description']} for result in results]

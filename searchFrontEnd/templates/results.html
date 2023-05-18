@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Search Results</title>
+    <title>Search Results: {{query}}</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="/static/styles.css">
 </head>
@@ -15,8 +15,8 @@
               <input type="text" name="q" class="form-control" id="textbox" value="{{query}}">
               <button type="submit" class="btn btn-primary mt-2 float-right" id="searchButton">Search</button>
             </div>
-            <div class="col-md-4  filter">
-              <label class="authorLabel" for="author">Author:</label>
+            <div class="col-md-4  filter" >
+              <label class="authorLabel" for="author" class="subject">Author:</label>
               <select name="author" id="author" class="author">
 
                   <option value="Any" selected>_</option>
@@ -33,7 +33,7 @@
               <br>
               <br>
               <label for="yearfrom">From:</label>
-              <select name="yearfrom" id="yearfrom">
+              <select name="yearfrom" id="yearfrom" class="years">
                   <option value="1" selected>_</option>
                   {% for y in years %}
                   {% if y==yearfrom %}
@@ -44,7 +44,7 @@
                   {% endfor %}
               </select>
               <label for="yearto">To:</label>
-              <select name="yearto" id="yearto">
+              <select name="yearto" id="yearto" class="years">
                   <option value="2023" selected>_</option>
                   {% for y in years %}
                   {% if y==yearto %}
@@ -82,7 +82,7 @@
                     <button type="submit" class="btn btn-primary mt-2 float-right" id="applyButton">Apply</button>
                 </form> -->
                 <div class="chatbox">
-                    <p class="chat-text">----Chat gpt result window---</p>
+                    <p class="chat-header">----Chat gpt result window---</p>
                     <br>
                     <p class="chat-text">{{resultGPT}}</p>
                 </div>
