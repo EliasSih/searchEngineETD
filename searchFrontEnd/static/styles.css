@@ -32,13 +32,16 @@ form {
     font-size: 14px;
 }
 .chatbox {
-    background-color: #cdc6c5;
-    border-radius: 20px;
+    background-color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
     height: 700px;
     /* width: 90%; */
     margin-top: 5%;
     margin-left: 20px;
     padding: 3%;
+    
 }
 #textbox {
     display: inline-block;
@@ -55,13 +58,13 @@ form {
     height: 150px;
 }
 .author {
-    width: 50%;
+    width: 62%;
 }
 .subject {
     width: 80%;
 }
-.year {
-    width: 90%;
+.years {
+    width: 20%;
 }
 .authorLabel{
   margin-top: 3%;
@@ -72,8 +75,28 @@ form {
   margin-bottom: 3%;
 }
 .filter{
-  padding-left: 20px;
+  padding-left: 80px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-width:2px;
+  border-style: solid;
+  border-color: black;
 }
 .home{
   border: 2px;
 }
+
+.filterBox{
+    border: 15px black;
+}
+
+.chat-header{
+    color: #006621;
+    text-align: center;
+    line-height: 100px;
+  }
+.chat-text{
+    color: black;
+    text-align: center;
+  }
