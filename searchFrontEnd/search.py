@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request
 import pysolr
 import os
+import openai
 
 app = Flask(__name__)
 
@@ -35,6 +36,22 @@ def getFactes(query, facetOn):
         facetDict[facetArray[i]] = facetArray[i+1]
         i = i+2
     return dicttolist(removeZeros(facetDict))
+
+def chatGPT(prompt):
+    messages = [{"role": "system", "content": "You are a helpful search engine."}]
+
+    query = {}
+    query['role'] = 'user'
+    query['content'] = prompt
+    messages.append(query)
+
+    response = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=messages)
+
+    try:
+        result = response['choices'][0]['message']['content']
+    except:
+        result = "Please try another query, if problem persist, try again later."
+    return result
 
 @app.route('/')
 def home():
@@ -94,8 +111,12 @@ def search():
     authors = getFactes(query, "creator_str")
     years = getFactes(query, "date")
 
+    #request ai powered response from openai
+    resultGPT = chatGPT(originalQuery)
+    print(resultGPT)
+
     # results_for_template = [{'title': result['title'], 'identifier': result['identifier'], 'description': result['description']} for result in results]
-    return render_template('results.html', query=originalQuery, results=results, authors = authors, years = years, aut = aut, yearfrom = yearfrom, yearto=yearto)
+    return render_template('results.html', query=originalQuery, results=results, authors = authors, years = years, aut = aut, yearfrom = yearfrom, yearto=yearto, resultGPT=resultGPT)
 
 if __name__ == '__main__':
     app.run(debug=True)
