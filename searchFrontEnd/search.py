@@ -74,7 +74,9 @@ def basicSearch():
     print("Saw {0} result(s).".format(len(results)))
     authors = getFactes(query, "creator_str")
     years = getFactes(query, "date")
-    return render_template('results.html', query=query, results=results, authors = authors, years = years)
+    resultGPT = chatGPT(query)
+    print(resultGPT)
+    return render_template('results.html', query=query, results=results, authors = authors, years = years, resultGPT=resultGPT)
 
 @app.route('/search')
 def search():
@@ -124,16 +126,6 @@ def search():
     import math
     count = 0
     maxCount = min(math.ceil(len(results)*0.10), 5)
-    descriptions = ""
-    for i in results:
-        if "title" in i.keys():
-            descriptions = descriptions + i['title'][0][:10]
-        if count>maxCount:
-            break
-    descriptions = "Summarize this for a user:"+descriptions
-    testGpt = chatGPT(descriptions)
-    print("GPT Summary")
-    print(testGpt)
     # results_for_template = [{'title': result['title'], 'identifier': result['identifier'], 'description': result['description']} for result in results]
     return render_template('results.html', query=originalQuery, results=results, authors = authors, years = years, aut = aut, yearfrom = yearfrom, yearto=yearto, resultGPT=resultGPT)
 
