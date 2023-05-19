@@ -32,16 +32,16 @@ form {
     font-size: 14px;
 }
 .chatbox {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-style: solid;
     border-width: 2px;
     border-color: black;
-    height: 700px;
+    height: auto;
+    width: 400px;
     /* width: 90%; */
     margin-top: 5%;
     margin-left: 20px;
     padding: 3%;
-    
 }
 #textbox {
     display: inline-block;
@@ -49,9 +49,31 @@ form {
     /* position: relative; */
     margin-top: auto;
 }
-#searchButton {
-    display: inline-block;
-    margin: 10px;
+.searchButton {
+    background-color: white;
+    border-radius: 5px;
+    border-width:2px;
+    border-style: solid;
+    border-color: #ffffff;
+}
+
+
+.searchBox {
+    background-image: linear-gradient(to right, #5E17EB,#CD2020);
+    border-radius: 10px;
+    border-width:2px;
+    border-style: solid;
+    border-color: #ffffff;
+    font: 20px sans-serif;
+    width: auto;
+    height: auto;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: auto;
+    /*Solves a problem in which the content is being cut when the div is smaller than its' wrapper:*/
+    max-width: 80%;
+    max-height: 55%;
+    overflow:hidden;
 }
 .filters {
     width: 100%;
@@ -72,10 +94,8 @@ form {
 }
 .searchFields{
   text-align: left;
-  margin-bottom: 3%;
 }
 .filter{
-  padding-left: 80px;
   padding-right: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -92,12 +112,44 @@ form {
 }
 
 .chat-header{
-    color: #006621;
+    color: #000000;
     text-align: center;
     font: 1em sans-serif;
     font-size: 20px;
+    font-weight: bold;
   }
 .chat-text{
-    color: black;
+    color: black;   
     text-align: center;
   }
+
+.content {
+    width: auto;
+    height: auto;
+    background-color: #ffffff;
+    position: absolute; /*Can also be `fixed`*/
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    /*Solves a problem in which the content is being cut when the div is smaller than its' wrapper:*/
+    max-width: 50%;
+    max-height: 80%;
+    overflow:hidden;
+}
+
+.bottomText {
+    position: absolute; 
+    bottom: 5px; 
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    background-color: green"
+}
+
+.gradientClass {
+    background: linear-gradient(to right, #5E17EB,#CD2020);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

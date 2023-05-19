@@ -15,6 +15,9 @@
                 <a class="home" href="/">Home</a>
               <input type="text" name="q" class="form-control" id="textbox" value="{{query}}">
               <button type="submit" class="btn btn-primary mt-2 float-right" id="searchButton">Search</button>
+              <br>
+              <h2>Search results for: <a class="gradientClass">{{ query }}</a></h2>
+                <p>Found <b>{{results|length}}</b> results</p>
             </div>
             <div class="col-md-4  filter" >
               <label class="authorLabel" for="author" class="subject">Author:</label>
@@ -57,16 +60,16 @@
                 {% endif %}
                   {% endfor %}
               </select>
-              <br>
             </div>
           </div>
         </form>
       </div>
-      <div class="row">
+      <br>
+      <div class="row"> 
+        <hr color="linear-gradient(to right, #5E17EB,#CD2020)" size="5px">
             <div class="col-md-8 res-div">
-                <hr>
-                <h2>Search results for "{{ query }}"</h2>
-                <p>Found {{results|length}} results</p>
+                
+                
                 {% for result in results %}
                 <div class="result">
                     <div class="result-title">
@@ -86,7 +89,8 @@
                 </form> -->
                 <div class="chatbox">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/OpenAI_Logo.svg/2560px-OpenAI_Logo.svg.png" width="200" height="50" class="center"/>
-
+                  <br>
+                  <br>
                     <p class="chat-header">A query summary by ChatGPT</p>
                     <hr>
                     <p class="chat-text">{{resultGPT}}</p>
