@@ -94,7 +94,8 @@ form {
 .chat-header{
     color: #006621;
     text-align: center;
-    line-height: 100px;
+    font: 1em sans-serif;
+    font-size: 20px;
   }
 .chat-text{
     color: black;

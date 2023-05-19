@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
+  
     <div class="container">
       <div class="row searchFields">
         <form action="/search" method="get" class="form-group mt-5">
@@ -29,6 +30,8 @@
 
                   {% endfor %}
               </select>
+              <br>
+              <br>
               <input type="text" name="subject" class="subject" placeholder="Subject...">
               <br>
               <br>
@@ -61,7 +64,7 @@
       </div>
       <div class="row">
             <div class="col-md-8 res-div">
-
+                <hr>
                 <h2>Search results for "{{ query }}"</h2>
                 <p>Found {{results|length}} results</p>
                 {% for result in results %}
@@ -82,8 +85,10 @@
                     <button type="submit" class="btn btn-primary mt-2 float-right" id="applyButton">Apply</button>
                 </form> -->
                 <div class="chatbox">
-                    <p class="chat-header">----Chat gpt result window---</p>
-                    <br>
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/OpenAI_Logo.svg/2560px-OpenAI_Logo.svg.png" width="200" height="50" class="center"/>
+
+                    <p class="chat-header">A query summary by ChatGPT</p>
+                    <hr>
                     <p class="chat-text">{{resultGPT}}</p>
                 </div>
             </div>

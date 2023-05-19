@@ -107,9 +107,13 @@ def Extract(xml_file, outputFile):
         elif item["date"] == "<yyyy>" or item["date"] == "n/a":
             date.text = "1111"
         else:
-            date.text = re.search(r"[1-3][0-9]{3}", item["date"]).group(0)
-            print(item["title"],date.text)
+            try:
+                date.text = re.search(r"[1-3][0-9]{3}", item["date"]).group(0)
+            #print(item["title"],date.text)
             #print(re.search(r"[1-3][0-9]{3}", item["date"]).group(0))
+            except:
+                date.text = "0000"
+
 
 
         description.text = item["description"]
@@ -134,14 +138,14 @@ def Extract(xml_file, outputFile):
         with open("ReformattedData\\"+outputFile, "wb") as f:
             f.write(b_xml)
             count = count+1
-            print(count)
+            #print(count)
     return count
 
 
 total = 0
 import glob
 txtfiles = []
-for file in glob.glob("Metadata\\aaaaaadb.xml"):
+for file in glob.glob("Metadata\\*.xml"):
 #for file in ["Metadata\\aaaaaaaa.xml"]:
     txtfiles.append(file)
     ls = file.split("\\")
