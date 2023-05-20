@@ -12,9 +12,10 @@
         <form action="/search" method="get" class="form-group mt-5">
           <div class="row">
             <div class="col-md-8">
-                <a class="home" href="/">Home</a>
+                <a class="home" href="/"><img src="{{url_for('static', filename='Home.png')}}" height="25" width="25"/></a>
               <input type="text" name="q" class="form-control" id="textbox" value="{{query}}">
               <button type="submit" class="searchButton2"><a class="gradientClass">Search</a></button>
+              <br>
               <br>
               <h2>Search results for: <a class="gradientClass">{{ query }}</a></h2>
                 <p>Found <b>{{results|length}}</b> results</p>
@@ -73,9 +74,13 @@
                 {% for result in results %}
                 <div class="result">
                     <div class="result-title">
-                        <a href="{{ result['identifier'][0] }}">{{ result['title'][0] }}</a>
+                      <a href="{{ result['identifier'][0] }}">{{ result['title'][0] }}</a>
                     </div>
-                    <div class="result-url">{{ result['identifier'][0]  }}</div>
+                    {% if valid=="True" %}
+                    <div class="result-url"><img src="{{url_for('static', filename='Link_Ok.png')}}" height="12" width="12"/> {{ result['identifier'][0]  }}</div>
+                    {% else %}
+                    <div class="result-url"><img src="{{url_for('static', filename='Link_NotOk.png')}}" height="12" width="12"/> {{ result['identifier'][0]  }}</div>
+                    {% endif %}
                     {% if "description" in result %}
                     <div class="result-description">{{ result['description'][0][:1000] + "..."}}</div>
                     {% endif %}
