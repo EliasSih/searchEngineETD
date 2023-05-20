@@ -57,6 +57,14 @@ form {
     border-color: #ffffff;
 }
 
+.searchButton2 {
+    background-color: white;
+    border-radius: 5px;
+    border-width:2px;
+    border-style: solid;
+    border-color: #000000;
+}
+
 
 .searchBox {
     background-image: linear-gradient(to right, #5E17EB,#CD2020);
