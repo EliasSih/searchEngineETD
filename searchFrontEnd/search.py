@@ -104,7 +104,7 @@ def search():
     else:
         yearfrom = None
         yearto = None
-    
+    load()
     print(query)
     #The query
     params = {
