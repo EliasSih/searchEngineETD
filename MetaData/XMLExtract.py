@@ -1,5 +1,18 @@
 import xml.etree.ElementTree as ET
 import re
+import requests
+
+
+def send_get_request(url):
+    try:
+        response = requests.get(url)
+        if response.status_code == 200:
+            return True
+        else:
+            return False
+    except Exception as e:
+        print(f'Error sending GET request to {url}: {str(e)}')
+        return False
 
 def parse_xml(xml_file):
     # Parse XML with ElementTree
@@ -14,7 +27,6 @@ def parse_xml(xml_file):
 
     # Create a list to hold all items
     items = []
-
 
     # Iterate over each 'oai_dc:dc' element in the XML
     for metadata in root.findall('.//oai_dc:dc', namespaces):
@@ -54,10 +66,6 @@ def parse_xml(xml_file):
 
 def Extract(xml_file, outputFile):
     items = parse_xml(xml_file)
-    #for item in items:
-        #print(item)
-    #    pass
-
 
     # This is the parent (root) tag
     # onto which other tags would be
@@ -66,8 +74,6 @@ def Extract(xml_file, outputFile):
     count = 0
     for item in items:
         
-        # Adding a subtag named `Opening`
-        # inside our root tag
         element1 = ET.SubElement(data, 'doc')
 
         # Adding subtags under the `Opening`
@@ -114,8 +120,6 @@ def Extract(xml_file, outputFile):
             except:
                 date.text = "0000"
 
-
-
         description.text = item["description"]
         #date.text = item["date"]
         language.text = item["language"]
@@ -124,7 +128,10 @@ def Extract(xml_file, outputFile):
             identifier = ET.SubElement(element1, 'field')
             identifier.set('name', 'identifier')
             identifier.text = i
-
+        ValidLink = ET.SubElement(element1, 'field')
+        ValidLink.set('name', 'validLink')
+        ValidLink.text=str(send_get_request(item["identifier"][0]))
+        
 
         # Converting the xml data to byte object,
         # for allowing flushing data to file
@@ -145,7 +152,7 @@ def Extract(xml_file, outputFile):
 total = 0
 import glob
 txtfiles = []
-for file in glob.glob("Metadata\\*.xml"):
+for file in glob.glob("Metadata\\toFormat.xml"):
 #for file in ["Metadata\\aaaaaaaa.xml"]:
     txtfiles.append(file)
     ls = file.split("\\")
