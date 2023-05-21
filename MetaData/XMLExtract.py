@@ -130,7 +130,8 @@ def Extract(xml_file, outputFile):
             identifier.text = i
         ValidLink = ET.SubElement(element1, 'field')
         ValidLink.set('name', 'validLink')
-        ValidLink.text=str(send_get_request(item["identifier"][0]))
+        #ValidLink.text=str(send_get_request(item["identifier"][0]))
+        ValidLink.text = "h"
         
 
         # Converting the xml data to byte object,
@@ -152,10 +153,16 @@ def Extract(xml_file, outputFile):
 total = 0
 import glob
 txtfiles = []
-for file in glob.glob("Metadata\\*.xml"):
+#for file in glob.glob("*.xml"):
 #for file in ["Metadata\\aaaaaaaa.xml"]:
-    txtfiles.append(file)
-    ls = file.split("\\")
-    outputFile = ls[1]
-    total = total + Extract(file, outputFile)
+import os
+for file in os.listdir(".\MetaData"):
+    if file.endswith('.xml'):
+        txtfiles.append(file)
+        #ls = file.split("\\")
+        outputFile = file
+        file = ".\MetaData\\" + file
+        
+        total = total + Extract(file, outputFile)
+print(txtfiles)
 print("Total number of docs:", total)

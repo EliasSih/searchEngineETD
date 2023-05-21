@@ -26,11 +26,9 @@ def spellCheck(query):
     spell = SpellChecker()
     words = query.split()
     correctedQuery = []
-
     for word in words:
         correctedWord = spell.correction(word)
         correctedQuery.append(correctedWord)
-
     correctedQuery = ' '.join(correctedQuery)
     return correctedQuery
 
