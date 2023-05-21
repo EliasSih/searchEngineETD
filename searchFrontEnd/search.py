@@ -20,6 +20,20 @@ def dicttolist(dic):
     resultList.sort()
     return resultList
 
+def spellCheck(query):
+    #Performs a spell check
+    from spellchecker import SpellChecker
+    spell = SpellChecker()
+    words = query.split()
+    correctedQuery = []
+
+    for word in words:
+        correctedWord = spell.correction(word)
+        correctedQuery.append(correctedWord)
+
+    correctedQuery = ' '.join(correctedQuery)
+    return correctedQuery
+
 def getFactes(query, facetOn):
     print("in facets:", query)
     params = {
@@ -66,6 +80,7 @@ def home():
 def basicSearch():
     print("search route")
     query = request.args.get('q')
+    query = spellCheck(query)
     params = {
     'rows': '100000', 
     "q.op" : "AND",
@@ -83,6 +98,8 @@ def search():
     print("search route")
     query = request.args.get('q')
     originalQuery = query
+    query = spellCheck(query)
+    originalQuery = spellCheck(originalQuery)
     #if request.args.get('subject') != "":
     #    sub = request.args.get('subject')
     #    query = query + " subject:" + sub
@@ -130,4 +147,3 @@ def search():
 
 if __name__ == '__main__':
     app.run(debug=True)
-    
