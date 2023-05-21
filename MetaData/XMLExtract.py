@@ -145,14 +145,14 @@ def Extract(xml_file, outputFile):
         with open("ReformattedData\\"+outputFile, "wb") as f:
             f.write(b_xml)
             count = count+1
-            #print(count)
+            print(count)
     return count
 
 
 total = 0
 import glob
 txtfiles = []
-for file in glob.glob("Metadata\\toFormat.xml"):
+for file in glob.glob("Metadata\\*.xml"):
 #for file in ["Metadata\\aaaaaaaa.xml"]:
     txtfiles.append(file)
     ls = file.split("\\")
