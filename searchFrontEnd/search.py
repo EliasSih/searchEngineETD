@@ -28,7 +28,10 @@ def spellCheck(query):
     correctedQuery = []
     for word in words:
         correctedWord = spell.correction(word)
-        correctedQuery.append(correctedWord)
+        if correctedWord is None:
+            correctedQuery.append(word)
+        else:
+            correctedQuery.append(correctedWord)
     correctedQuery = ' '.join(correctedQuery)
     return correctedQuery
 
@@ -89,7 +92,7 @@ def basicSearch():
     years = getFactes(query, "date")
     resultGPT = chatGPT(query)
     print(resultGPT)
-    return render_template('results.html', query=query, results=results, authors = authors, years = years, resultGPT=resultGPT, valid = "True")
+    return render_template('results.html', query=query, results=results, authors = authors, years = years, resultGPT=resultGPT)
 
 @app.route('/search')
 def search():
@@ -141,7 +144,7 @@ def search():
     count = 0
     maxCount = min(math.ceil(len(results)*0.10), 5)
     # results_for_template = [{'title': result['title'], 'identifier': result['identifier'], 'description': result['description']} for result in results]
-    return render_template('results.html', query=originalQuery, results=results, authors = authors, years = years, aut = aut, yearfrom = yearfrom, yearto=yearto, resultGPT=resultGPT, valid="True")
+    return render_template('results.html', query=originalQuery, results=results, authors = authors, years = years, aut = aut, yearfrom = yearfrom, yearto=yearto, resultGPT=resultGPT)
 
 if __name__ == '__main__':
     app.run(debug=True)

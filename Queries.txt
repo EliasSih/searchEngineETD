@@ -10,6 +10,7 @@ curl -X POST -H "Content-type:application/json" --data-binary "{\"add-field\": {
 curl -X POST -H "Content-type:application/json" --data-binary "{\"add-field\": {\"name\":\"dc:language\", \"type\":\"text_general\", \"stored\":true}}" http://localhost:8983/solr/ETDSearch/schema
 curl -X POST -H "Content-type:application/json" --data-binary "{\"add-field\": {\"name\":\"dc:date\", \"type\":\"pdate\", \"stored\":true, \"docValues\":true}}" http://localhost:8983/solr/ETDSearch/schema
 
+curl -X POST -H "Content-type:application/json" --data-binary "{\"add-field\": {\"name\":\"validLink\", \"type\":\"text_general\", \"stored\":true, \"docValues\":true}}" http://localhost:8983/solr/testCollection/schema
 
 
 
