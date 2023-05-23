@@ -12,12 +12,13 @@
         <form action="/search" method="get" class="form-group mt-5">
           <div class="row">
             <div class="col-md-8">
-                <a class="home" href="/"><img src="{{url_for('static', filename='Home.png')}}" height="25" width="25"/></a>
+                <a class="home" href="/"><img src="{{url_for('static', filename='2_cropped.png')}}" height="50" width="150"/></a>
               <input type="text" name="q" class="form-control" id="textbox" value="{{query}}">
               <button type="submit" class="searchButton2"><a class="gradientClass">Search</a></button>
               <br>
               <br>
-              <h2>Search results for: <a class="gradientClass">{{ query }}</a></h2>
+              <hr>
+              <h2>Search results for: <a class="gradientClass">{{ query }}</a>.</h2>
                 <p>Found <b>{{results|length}}</b> results</p>
             </div>
             <div class="col-md-4  filter" >
@@ -76,7 +77,7 @@
                     <div class="result-title">
                       <a href="{{ result['identifier'][0] }}">{{ result['title'][0] }}</a>
                     </div>
-                    {% if valid=="True" %}
+                    {% if result['validLink'][0]=="True" %}
                     <div class="result-url"><img src="{{url_for('static', filename='Link_Ok.png')}}" height="12" width="12"/> {{ result['identifier'][0]  }}</div>
                     {% else %}
                     <div class="result-url"><img src="{{url_for('static', filename='Link_NotOk.png')}}" height="12" width="12"/> {{ result['identifier'][0]  }}</div>
@@ -93,7 +94,7 @@
                     <button type="submit" class="btn btn-primary mt-2 float-right" id="applyButton">Apply</button>
                 </form> -->
                 <div class="chatbox">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/OpenAI_Logo.svg/2560px-OpenAI_Logo.svg.png" width="200" height="50" class="center"/>
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/OpenAI_Logo.svg/2560px-OpenAI_Logo.svg.png" width="160" height="40" class="center"/>
                   <br>
                   <br>
                     <p class="chat-header">A query summary by ChatGPT</p>
